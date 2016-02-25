@@ -1,0 +1,1 @@
+curl -s http://www.usask.ca/culinaryservices/foodmenu/ | grep -o "<strong>.*</strong>" | sed 's/<strong>//' | sed 's/<\/strong>//' | sed 's/<.*//' | sed 's/&amp/and/' | sed 's/;//' | sed 's/&#160//'
