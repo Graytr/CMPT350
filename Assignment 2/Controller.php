@@ -12,24 +12,26 @@ if (!isset($_REQUEST['newBuilding'])){
 	} else {
 		//$database = the database
 		
-		//Set the character encoding to utf8 and kill myself if otherwise
-		if (!mysql_set_charset($link, 'utf8')){
-			$database = 'Unable to establish database encoding';
-			include 'view-buildings.php'
-			exit();
-		}
+ 		//Set the character encoding to utf8 and kill myself if otherwise
+// 		if (!mysql_set_charset($link, 'utf8')){
+// 			$database = 'Unable to establish database encoding';
+// 			include 'view-buildings.php';
+// 			exit();
+// 		}
+		mysql_query("SET NAMES 'utf8'");
+		mysql_query("SET CHARACTER SET utf8");
+		mysql_query("SET COLLATION_CONNECTION = 'utf8_unicode_ci'");
 		
 		//Grab the actual database
 		if( !mysql_select_db($link, 'database') ){
-			//Kill myself
+			//Kill myself if I cant actually grab the database
 			$database = 'Unable to locate the database';
 			include 'view-buildings.php';
 			exit();
-		}
+		} 
 		
 		
 		$database = 'We all good fam';
-		
 		
 	}  
 	
