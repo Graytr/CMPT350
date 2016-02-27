@@ -31,8 +31,21 @@
 	
     	<p>This page is for the buildings table</p>
 		
+		<p>Insert code to show the buildings table here</p>
 		
-    
+		<!-- CODE FOR THE FORM TO ADD A BUILDING -->
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Add New Building</legend>
+				<p>Building Name: <input type ="text" id="buildingName" name="buildingName" maxlength="30" value="" required /> </p>
+				<p>City: <input type="text" id="cityName" name="cityName" value="" maxlength="30" required /></p>
+				<p>Address: <input type="text" id="address" name="address" value="" maxlength="30" required/> </p>
+				<p>Postal Code: <input type="text" id="postalCode" name="postalCode" value="" maxlength="7" required/> </p>
+				<p>Number of Rooms: <input type="number" id="numRooms" name="numRooms" value="" min="0" max="9999999" required/> </p>
+				<p><button onclick="<!--INSERT SCRIPT HERE-->">Submit</button></p> 
+			</form>
+		</div>
 
     
 		<footer id="footer">
