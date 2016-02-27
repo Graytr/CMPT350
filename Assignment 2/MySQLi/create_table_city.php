@@ -8,7 +8,7 @@
 	$sql= " CREATE TABLE IF NOT EXISTS city(
 			cityName VARCHAR(30) NOT NULL PRIMARY KEY,
 			province VARCHAR(30) NOT NULL,
-			country VARCHAR(30) NOT NULL,
+			country VARCHAR(30) NOT NULL
 		)";
 	$conn= new mysqli($servername,$username,$password,$dbname);
 	
