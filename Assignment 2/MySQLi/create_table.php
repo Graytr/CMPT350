@@ -27,9 +27,9 @@
 
 	//Create second table, building
 	$sql= " CREATE TABLE building(
-			buildingName VARCHAR(30) NOT NULL,
+			buildingName VARCHAR(30) NOT NULL PRIMARY KEY,
 			cityName VARCHAR(30) NOT NULL,
-			address VARCHAR(30) NOT NULL PRIMARY KEY,
+			address VARCHAR(30) NOT NULL,
 			postalCode VARCHAR(7) NOT NULL,
 			numberRooms Int(4),
 		)";
@@ -74,7 +74,7 @@
 	//Create fourth table, room
 	$sql= " CREATE TABLE room(
 			id Int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-			tenantName VARCHAR(30) NOT NULL,
+			tenantName VARCHAR(30),
 			buildingName VARCHAR(30) NOT NULL,
 			rent Int(5) NOT NULL
 		)";
