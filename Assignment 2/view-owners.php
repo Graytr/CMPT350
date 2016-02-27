@@ -17,14 +17,14 @@
 			<h1>Amazing Apartments</h1>
 		</header>
 	
-		<div class ="sidebar" id = "sidebar">
+		<div class="sidebar" id="sidebar">
 			<p>
-			<a href="view.html">Home</a>
-			<a href="view-cities.html">Cities</a>					
-			<a href="view-buildings.html">Buildings</a>					
-			<a href="view-people.html">People</a>					
-			<a href="view-rooms.html">Rooms</a>					
-			<a href="view-owners.html">Owners</a>					
+			<a href="view.php">Home</a>
+			<a href="view-cities.php">Cities</a>					
+			<a href="view-buildings.php">Buildings</a>					
+			<a href="view-people.php">People</a>					
+			<a href="view-rooms.php">Rooms</a>					
+			<a href="view-owners.php">Owners</a>					
 			</p>
 		</div>
 	
