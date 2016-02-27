@@ -4,7 +4,7 @@
 if ( isset($_REQUEST['newCity']) || isset($_REQUEST['curCity']) || isset($_REQUEST['deleteCity']) ){ 
 	//Update the database here with new information
 
-	if ( isset($_REQUEST['newCity']) {
+	if ( isset($_REQUEST['newCity']) ) {
 		//Creates the table for a new city
 		include './MySQLi/create_table_city.php';
 		$sql= " INSERT INTO city(cityName, province, country) VALUES ('h','h','h')";
@@ -25,10 +25,10 @@ if ( isset($_REQUEST['newCity']) || isset($_REQUEST['curCity']) || isset($_REQUE
   		$conn->close();
 	}
 	
-	if ( isset($_REQUEST['curCity'] ) {
+	if ( isset($_REQUEST['curCity']) ) {
 	}
 	
-	if ( isset($_REQUEST['deleteCity'] ) {
+	if ( isset($_REQUEST['deleteCity']) ) {
 	}
 		
 	include 'view-cities.php';

@@ -4,7 +4,7 @@
 if ( isset($_REQUEST['newBuilding']) || isset($_REQUEST['curBuilding']) || isset($_REQUEST['deleteBuilding']) ){ 
 	//Update the database here with new information
 
-	if ( isset($_REQUEST['newBuilding']) {
+	if ( isset($_REQUEST['newBuilding']) ) {
 		//Creates the table for a new city
 		include './MySQLi/create_table_building.php';
 		$sql= " INSERT INTO building(buildingName, cityName, address, postalCode, numberRooms) VALUES ('h','h', 'h', 'h', '2')";
@@ -22,10 +22,10 @@ if ( isset($_REQUEST['newBuilding']) || isset($_REQUEST['curBuilding']) || isset
   		$conn->close();
 	}
 	
-	if ( isset($_REQUEST['curBuilding'] ) {
+	if ( isset($_REQUEST['curBuilding']) ) {
 	}
 	
-	if ( isset($_REQUEST['deleteBuilding'] ) {
+	if ( isset($_REQUEST['deleteBuilding']) ) {
 	}
 		
   	include 'view-buildings.php';

@@ -4,7 +4,7 @@
 if ( isset($_REQUEST['newOwner']) || isset($_REQUEST['curOwner']) || isset($_REQUEST['deleteOwner']) ){ 
 	//Update the database here with new information
 
-	if ( isset($_REQUEST['newCity']) {
+	if ( isset($_REQUEST['newCity']) ) {
 		//Creates the table for a new city
 		include './MySQLi/create_table_owner.php';
 		$sql= " INSERT INTO owner(name, buildingName) VALUES ('h','h')";
@@ -19,13 +19,15 @@ if ( isset($_REQUEST['newOwner']) || isset($_REQUEST['curOwner']) || isset($_REQ
 			die("Unable to connect to the database server: " . $conn->connect_error);
 		}
 						
+		$database = 'We all good fam';				
+		
   		$conn->close();
 	}
 	
-	if ( isset($_REQUEST['curOwner'] ) {
+	if ( isset($_REQUEST['curOwner']) ) {
 	}
 	
-	if ( isset($_REQUEST['deleteOwner'] ) {
+	if ( isset($_REQUEST['deleteOwner']) ) {
 	}
 		
   	include 'view-owners.php';

@@ -4,7 +4,7 @@
 if ( isset($_REQUEST['newPerson']) || isset($_REQUEST['curName']) || isset($_REQUEST['deletePerson']) ){ 
 	//Update the database here with new information
 
-	if ( isset($_REQUEST['newPerson']) {
+	if ( isset($_REQUEST['newPerson']) ) {
 		//Creates the table for a new city
 		include './MySQLi/create_table_building.php';
 		$sql= " INSERT INTO person(name, phone, age) VALUES ('h','h', '2')";
@@ -18,14 +18,16 @@ if ( isset($_REQUEST['newPerson']) || isset($_REQUEST['curName']) || isset($_REQ
 			$database = "";
 			die("Unable to connect to the database server: " . $conn->connect_error);
 		}
+			
+		$database = 'We all good fam';
 						
   		$conn->close();
 	}
 	
-	if ( isset($_REQUEST['curName'] ) {
+	if ( isset($_REQUEST['curName']) ) {
 	}
 	
-	if ( isset($_REQUEST['deletePerson'] ) {
+	if ( isset($_REQUEST['deletePerson']) ) {
 	}
 		
   	include 'view-people.php';

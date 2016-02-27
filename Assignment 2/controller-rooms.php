@@ -4,7 +4,7 @@
 if ( isset($_REQUEST['newRoomNum']) || isset($_REQUEST['curNum']) || isset($_REQUEST['deleteNum']) ){ 
 	//Update the database here with new information
 
-	if ( isset($_REQUEST['newRoomNum']) {
+	if ( isset($_REQUEST['newRoomNum']) ) {
 		//Creates the table for a new city
 		include './MySQLi/create_table_building.php';
 		$sql= " INSERT INTO room(id, tenantName, buildingName, rent) VALUES ('h','h', 'h', '2')";
@@ -18,14 +18,16 @@ if ( isset($_REQUEST['newRoomNum']) || isset($_REQUEST['curNum']) || isset($_REQ
 			$database = "";
 			die("Unable to connect to the database server: " . $conn->connect_error);
 		}
+			
+		$database = 'We all good fam';
 						
   		$conn->close();
 	}
 	
-	if ( isset($_REQUEST['curNum'] ) {
+	if ( isset($_REQUEST['curNum']) ) {
 	}
 	
-	if ( isset($_REQUEST['deleteNum'] ) {
+	if ( isset($_REQUEST['deleteNum']) ) {
 	}
 		
 	include 'view-rooms.php';
