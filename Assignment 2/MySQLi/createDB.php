@@ -9,11 +9,15 @@
 		die("Connection failed: " . $conn->connect_error);
 	}
 // Create database
-	$sql = "CREATE DATABASE database";
+
+
+	$sql = "CREATE DATABASE IF NOT EXISTS myDatabase";
 	if ($conn->query($sql) === TRUE) {
-		echo "Database created successfully";
+		//TESTING PURPOSES V
+		//echo "Database created successfully";
 	} else {
+		//TESTING PURPOSES V
 		echo "Error creating database: " . $conn->error;
-		}
+	}
 	$conn->close();
 ?>

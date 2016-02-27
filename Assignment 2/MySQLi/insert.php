@@ -10,7 +10,7 @@
 	$sql= " INSERT INTO posts(firstname, lastname,email,comment) VALUES ('$firstname','$lastname','$email','$comment')";
 
 	// Create connection
-	$conn = new mysqli($servername, $username, $password,"database");
+	$conn = new mysqli($servername, $username, $password,"myDatabase");
 // Check connection
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);

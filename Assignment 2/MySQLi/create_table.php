@@ -2,6 +2,7 @@
 	$servername="localhost";
 	$username="root";
 	$password="";
+	$dbname="myDatabase";
 
 //Create first table, city
 	$sql= " CREATE TABLE city(
@@ -9,7 +10,7 @@
 			province VARCHAR(30) NOT NULL,
 			country VARCHAR(30) NOT NULL,
 		)";
-	$conn= new mysqli($servername,$username,$password,"database");
+	$conn= new mysqli($servername,$username,$password,$dbname);
 	
 	// Check connection
 	if ($conn->connect_error) {
@@ -33,7 +34,7 @@
 			postalCode VARCHAR(7) NOT NULL,
 			numberRooms Int(4),
 		)";
-	$conn= new mysqli($servername,$username,$password,"database");
+	$conn= new mysqli($servername,$username,$password,$dbname);
 	
 	// Check connection
 	if ($conn->connect_error) {
@@ -55,7 +56,7 @@
 			phone Int(10) NOT NULL,
 			age Int(3) NOT NULL
 		)";
-	$conn= new mysqli($servername,$username,$password,"database");
+	$conn= new mysqli($servername,$username,$password,$dbname);
 	
 	// Check connection
 	if ($conn->connect_error) {
@@ -78,7 +79,7 @@
 			buildingName VARCHAR(30) NOT NULL,
 			rent Int(5) NOT NULL
 		)";
-	$conn= new mysqli($servername,$username,$password,"database");
+	$conn= new mysqli($servername,$username,$password,$dbname);
 	
 	// Check connection
 	if ($conn->connect_error) {
@@ -99,7 +100,7 @@
 			name VARCHAR(30) NOT NULL PRIMARY KEY,
 			buildingName VARCHAR(30) NOT NULL,
 		)";
-	$conn= new mysqli($servername,$username,$password,"database");
+	$conn= new mysqli($servername,$username,$password,$dbname);	
 	
 	// Check connection
 	if ($conn->connect_error) {

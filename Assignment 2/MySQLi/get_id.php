@@ -2,7 +2,7 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "";
-	$dbname="database";
+	$dbname="myDatabase";
 
 	$firstname="Mayra";
 	$lastname="Samaniego";
@@ -11,7 +11,7 @@
 	$sql= " INSERT INTO posts(firstname, lastname,email,comment) VALUES ('$firstname','$lastname','$email','$comment')";
 
 	// Create connection
-	$conn = new mysqli($servername, $username, $password,"database");
+	$conn = new mysqli($servername, $username, $password,$dbname);
 // Check connection
 	if ($conn->connect_error) {
 		die("Connection failed: " . $conn->connect_error);
