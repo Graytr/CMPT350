@@ -10,7 +10,7 @@
 			cityName VARCHAR(30) NOT NULL,
 			address VARCHAR(30) NOT NULL,
 			postalCode VARCHAR(7) NOT NULL,
-			numberRooms Int(4),
+			numberRooms Int(4)
 		)";
 	$conn= new mysqli($servername,$username,$password,$dbname);
 	
