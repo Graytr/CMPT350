@@ -73,7 +73,7 @@
 
 	//Create fourth table, room
 	$sql= " CREATE TABLE room(
-			id Int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+			id Int(10) NOT NULL PRIMARY KEY,
 			tenantName VARCHAR(30),
 			buildingName VARCHAR(30) NOT NULL,
 			rent Int(5) NOT NULL
