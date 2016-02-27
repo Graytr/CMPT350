@@ -68,11 +68,11 @@
     
 		<p><br>To delete an existing building in the database, please fill out the form below</p>
 		
-		<!-- CODE FOR THE FORM TO UPDATE A BUILDING -->
+		<!-- CODE FOR THE FORM TO DELETE A BUILDING -->
 		<div id ="form">
 			<form id="inputs" >
 				<fieldset>
-				<legend>Update Building</legend>
+				<legend>Delete Building</legend>
 				<p>Building Name: <input type ="text" id="deleteBuildingName" name="deleteBuildingName" maxlength="30" value="" required /> </p>
 				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
 			</form>

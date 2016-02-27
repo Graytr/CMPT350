@@ -30,6 +30,48 @@
 	
     	<p>This page is for the cities table</p>
 		
+		<p>Insert code to show the cities table here</p>
+		
+		<!-- CODE FOR THE FORM TO ADD A CITY -->
+		<p>To create a new city in the database, please fill out the below form</p> 
+		
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Add New City</legend>
+				<p>City Name: <input type ="text" id="newCity" name="newCity" maxlength="30" value="" required /> </p>
+				<p>Province: <input type="text" id="newProvince" name="newProvince" value="" maxlength="30" required /></p>
+				<p>Country: <input type="text" id="newCountry" name="newCountry" value="" maxlength="30" required/> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
+			</form>
+		</div>
+
+		<p><br>To update an existing city in the database, please fill out the form below</p>
+		
+		<!-- CODE FOR THE FORM TO UPDATE A City -->
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Update City</legend>
+				<p>City Name Currently In Database: <input type ="text" id="curCity" name="curCity" maxlength="30" value="" required /> </p>
+				<p>Updated City Name: <input type ="text" id="updateCity" name="updateCity" maxlength="30" value="" required /> </p>
+				<p>Updated Province: <input type="text" id="updateProvince" name="updateProvince" value="" maxlength="30" required /></p>
+				<p>Updated Country: <input type="text" id="updateCountry" name="updateCountry" value="" maxlength="30" required/> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 
+			</form>
+		</div>
+    
+		<p><br>To delete an existing city in the database, please fill out the form below</p>
+		
+		<!-- CODE FOR THE FORM TO DELETE A CITY -->
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Delete City</legend>
+				<p>City Name: <input type ="text" id="deleteCity" name="deleteCity" maxlength="30" value="" required /> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
+			</form>
+		</div>
 		
     
     

@@ -31,7 +31,52 @@
 	
     	<p>This page is for the rooms table</p>
 		
+		<p>Insert code to show the rooms table here</p>
 		
+		<!-- CODE FOR THE FORM TO ADD A ROOM -->
+		<p>To create a new room in the database, please fill out the below form</p> 
+		
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Add New Room</legend>
+				<p>Room Number: <input type ="number" id="newRoomNum" name="newRoomNum" min="0" value="" required /> </p>
+				<p>Building Name: <input type="text" id="newBuildingName" name="newBuildingName" value="" required /> </p>
+				<p>Tenant Name: <input type="text" id="newTenantName" name="newTenantName" value="" /> </p>
+				<p>Rent: <input type="number" id="newRent" name="newRent" value="" max="99999" min="0" required/> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
+			</form>
+		</div>
+
+		<p><br>To update an existing room in the database, please fill out the form below</p>
+		
+		<!-- CODE FOR THE FORM TO UPDATE A ROOM -->
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Update Room</legend>
+				<p>Room Number Currently In Database: <input type ="number" id="curNum" name="curNum" value="" min="0" required /> </p>
+				<p>Building Name Currently In Database: <input type="text" id="curBuilding" name="curBuilding" value="" maxlength="30" required /> </p>
+				<p>Updated Room Number: <input type ="number" id="updateRoomNum" name="updateRoomNum" min="0" value="" required /> </p>
+				<p>Updated Building Name: <input type="text" id="updateBuildingName" name="updateBuildingName" value="" required /> </p>
+				<p>Updated Tenant Name: <input type="text" id="updateTenantName" name="updateTenantName" value="" /> </p>
+				<p>Updated Rent: <input type="number" id="updateRent" name="updateRent" value="" max="99999" min="0" required/> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 
+			</form>
+		</div>
+    
+		<p><br>To delete an existing room in the database, please fill out the form below</p>
+		
+		<!-- CODE FOR THE FORM TO DELETE A ROOM-->
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Delete Room</legend>
+				<p>Room Number: <input type ="number" id="deleteNum" name="deleteNum" value="" min="0" required /> </p>
+				<p>Building Name: <input type="text" id="deleteBuilding" name="deleteBuilding" value="" maxlength="30" required /> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
+			</form>
+		</div>
     
 
 

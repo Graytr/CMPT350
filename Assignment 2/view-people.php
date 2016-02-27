@@ -27,9 +27,50 @@
 			</p>
 		</div>
 	
-    	<p>This page is for the people table</p>
+    	<p>This page is for the person table</p>
 		
+		<p>Insert code to show the person table here</p>
 		
+		<!-- CODE FOR THE FORM TO ADD A PERSON -->
+		<p>To create a new person in the database, please fill out the below form</p> 
+		
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Add New Person</legend>
+				<p>Name: <input type ="text" id="newPerson" name="newPerson" maxlength="30" value="" required /> </p>
+				<p>Telephone Number: <input type="tel" id="newTel" name="newTel" value="" maxlength="30" required /></p>
+				<p>Age: <input type="number" id="newAge" name="newAge" value="" max="999" min="0" required/> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
+			</form>
+		</div>
+
+		<p><br>To update an existing person in the database, please fill out the form below</p>
+		
+		<!-- CODE FOR THE FORM TO UPDATE A PERSON -->
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Update Person</legend>
+				<p>Person Name Currently In Database: <input type ="text" id="curName" name="curName" maxlength="30" value="" required /> </p>
+				<p>Updated Name: <input type ="text" id="updatePerson" name="updatePerson" maxlength="30" value="" required /> </p>
+				<p>Updated Telephone Number: <input type="tel" id="updateTel" name="updateTel" value="" maxlength="30" required /></p>
+				<p>Updated Age: <input type="number" id="updateAge" name="updateAge" value="" max="999" min="0" required/> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 
+			</form>
+		</div>
+    
+		<p><br>To delete an existing person in the database, please fill out the form below</p>
+		
+		<!-- CODE FOR THE FORM TO DELETE A PERSON -->
+		<div id ="form">
+			<form id="inputs" >
+				<fieldset>
+				<legend>Delete Person</legend>
+				<p>Person Name: <input type ="text" id="deletePerson" name="deletePerson" maxlength="30" value="" required /> </p>
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
+			</form>
+		</div>
     
         
 		<footer id="footer">
