@@ -1,11 +1,11 @@
 <?php    
 
-if (!isset($_REQUEST['newBuilding'])){    
-	include 'view-buildings.php';
+if (!isset($_REQUEST['view'])){    
+	include 'view.php';
 } else {    
 
   //Update database here with information
-  	include 'view-cities.php';
+  	include 'view.php';
 
 }    
 

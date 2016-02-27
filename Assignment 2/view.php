@@ -18,12 +18,12 @@
     
 		<div class="sidebar" id="sidebar">
 			<p>
-			<a href="view.php">Home</a>
-			<a href="view-cities.php">Cities</a>					
-			<a href="view-buildings.php">Buildings</a>					
-			<a href="view-people.php">People</a>					
-			<a href="view-rooms.php">Rooms</a>					
-			<a href="view-owners.php">Owners</a>					
+			<a href="Controller.php">Home</a>
+			<a href="controller-cities.php">Cities</a>					
+			<a href="controller-buildings.php">Buildings</a>					
+			<a href="controller-people.php">People</a>					
+			<a href="controller-rooms.php">Rooms</a>					
+			<a href="controller-owners.php">Owners</a>					
 			</p>
 		</div>
 	
