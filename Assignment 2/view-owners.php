@@ -36,7 +36,7 @@
 		<p>To create a new owner in the database, please fill out the below form</p> 
 		
 		<div id ="form">
-			<form id="inputs" >
+			<form id="inputs" action="" method="post" >
 				<fieldset>
 				<legend>Add New Owner</legend>
 				<p>Owner Name: <input type ="text" id="newOwner" name="newOwner" maxlength="30" value="" required /> </p>

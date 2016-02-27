@@ -37,7 +37,7 @@
 		<p>To create a new building in the database, please fill out the below form</p> 
 		
 		<div id ="form">
-			<form id="inputs" >
+			<form id="inputs" action="" method="post" >
 				<fieldset>
 				<legend>Add New Building</legend>
 				<p>Building Name: <input type ="text" id="newBuildingName" name="newBuildingName" maxlength="30" value="" required /> </p>

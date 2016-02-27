@@ -36,7 +36,7 @@
 		<p>To create a new city in the database, please fill out the below form</p> 
 		
 		<div id ="form">
-			<form id="inputs" >
+			<form id="inputs" action="" method="post" >
 				<fieldset>
 				<legend>Add New City</legend>
 				<p>City Name: <input type ="text" id="newCity" name="newCity" maxlength="30" value="" required /> </p>

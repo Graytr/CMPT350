@@ -37,7 +37,7 @@
 		<p>To create a new room in the database, please fill out the below form</p> 
 		
 		<div id ="form">
-			<form id="inputs" >
+			<form id="inputs" action="" method="post">
 				<fieldset>
 				<legend>Add New Room</legend>
 				<p>Room Number: <input type ="number" id="newRoomNum" name="newRoomNum" min="0" value="" required /> </p>

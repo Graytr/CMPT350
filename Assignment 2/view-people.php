@@ -35,7 +35,7 @@
 		<p>To create a new person in the database, please fill out the below form</p> 
 		
 		<div id ="form">
-			<form id="inputs" >
+			<form id="inputs" action="" method="post">
 				<fieldset>
 				<legend>Add New Person</legend>
 				<p>Name: <input type ="text" id="newPerson" name="newPerson" maxlength="30" value="" required /> </p>
