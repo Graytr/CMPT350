@@ -21,10 +21,10 @@
 	
 	// Create Table
 	if ($conn->query($sql) === TRUE) {
-		echo "Table posts created successfully";
+		echo "Table building created successfully";
 	} else {
-		echo "Error creating city table: " . $conn->error;
-		}
+		echo "Error creating building table: " . $conn->error;
+	}
 
 	$conn->close();
  ?>
