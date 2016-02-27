@@ -38,12 +38,12 @@
 			<form id="inputs" >
 				<fieldset>
 				<legend>Add New Building</legend>
-				<p>Building Name: <input type ="text" id="buildingName" name="buildingName" maxlength="30" value="" required /> </p>
+				<p>Building Name: <input type ="text" id="buildingName" name="buildingName" maxlength="30" value="" required="true" /> </p>
 				<p>City: <input type="text" id="cityName" name="cityName" value="" maxlength="30" required /></p>
 				<p>Address: <input type="text" id="address" name="address" value="" maxlength="30" required/> </p>
 				<p>Postal Code: <input type="text" id="postalCode" name="postalCode" value="" maxlength="7" required/> </p>
 				<p>Number of Rooms: <input type="number" id="numRooms" name="numRooms" value="" min="0" max="9999999" required/> </p>
-				<p><input type="button" <!--onclick="INSERT SCRIPT HERE"--> value="Add"></p> 
+				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
 			</form>
 		</div>
 
