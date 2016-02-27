@@ -31,7 +31,8 @@
 	
     	<p>This page is for the rooms table</p>
 		
-		<p>Insert code to show the rooms table here</p>
+		<!--THIS CODE SHOULD OUTPUT THE DATABASE TABLE GIVEN TO IT FROM THE CONTROLLER-->
+		<?php echo $database; ?>
 		
 		<!-- CODE FOR THE FORM TO ADD A ROOM -->
 		<p>To create a new room in the database, please fill out the below form</p> 
@@ -78,8 +79,8 @@
 			</form>
 		</div>
     
-
-
+		<p></p>
+		
     
 		<footer id="footer">
 			2016 (c) Travis Gray, Halle Jackson

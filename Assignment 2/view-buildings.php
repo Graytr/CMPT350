@@ -31,7 +31,8 @@
 	
     	<p>This page is for the buildings table</p>
 		
-		<p>Insert code to show the buildings table here</p>
+		<!--THIS CODE SHOULD OUTPUT THE DATABASE TABLE GIVEN TO IT FROM THE CONTROLLER-->
+		<?php echo $database; ?>
 		
 		<!-- CODE FOR THE FORM TO ADD A BUILDING -->
 		<p>To create a new building in the database, please fill out the below form</p> 
@@ -77,6 +78,8 @@
 				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
 			</form>
 		</div>
+		
+		<p></p>
 	
 		<footer id="footer">
 			2016 (c) Travis Gray, Halle Jackson
