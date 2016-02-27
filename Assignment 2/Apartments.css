@@ -43,7 +43,7 @@ body {
 a:link, a:visited , a:active{
     background-color: blue;
     color: white;
-    padding: 14px 25px;
+    padding: 1% 1%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
