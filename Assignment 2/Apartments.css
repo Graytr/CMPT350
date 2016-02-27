@@ -33,3 +33,23 @@ body {
       margin:0 auto;
       font-size:18px;
 }
+
+#form {
+	width:65%;
+	text-align:center;
+	margin-left:18%;
+}
+
+a:link, a:visited , a:active{
+    background-color: blue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover{
+    background-color: white;
+	color:blue;
+}
