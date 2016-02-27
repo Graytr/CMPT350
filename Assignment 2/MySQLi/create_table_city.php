@@ -19,7 +19,8 @@
 	
 	// Create Table
 	if ($conn->query($sql) === TRUE) {
-		echo "Table city created successfully";
+		//In for testing purposes
+		//echo "Table city created successfully";
 	} else {
 		echo "Error creating city table: " . $conn->error;
 	}

@@ -20,7 +20,8 @@
 	
 	// Create Table
 	if ($conn->query($sql) === TRUE) {
-		echo "Table room created successfully";
+		//In for testing purposes
+		//echo "Table room created successfully";
 	} else {
 		echo "Error creating room table: " . $conn->error;
 	}

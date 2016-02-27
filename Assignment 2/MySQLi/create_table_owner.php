@@ -19,7 +19,8 @@
 	
 	// Create Table
 	if ($conn->query($sql) === TRUE) {
-		echo "Table owner created successfully";
+		//In for testing purposes
+		//echo "Table owner created successfully";
 	} else {
 		echo "Error creating owner table: " . $conn->error;
 	}

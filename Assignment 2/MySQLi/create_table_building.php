@@ -21,7 +21,8 @@
 	
 	// Create Table
 	if ($conn->query($sql) === TRUE) {
-		echo "Table building created successfully";
+		//In for testing purposes
+		//echo "Table building created successfully";
 	} else {
 		echo "Error creating building table: " . $conn->error;
 	}
