@@ -43,7 +43,7 @@
 				<p>Address: <input type="text" id="address" name="address" value="" maxlength="30" required/> </p>
 				<p>Postal Code: <input type="text" id="postalCode" name="postalCode" value="" maxlength="7" required/> </p>
 				<p>Number of Rooms: <input type="number" id="numRooms" name="numRooms" value="" min="0" max="9999999" required/> </p>
-				<p><button onclick="<!--INSERT SCRIPT HERE-->">Submit</button></p> 
+				<p><input type="button" <!--onclick="INSERT SCRIPT HERE"--> value="Add"></p> 
 			</form>
 		</div>
 
