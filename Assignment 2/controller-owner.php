@@ -4,8 +4,8 @@
 if ( isset($_REQUEST['newOwner']) || isset($_REQUEST['curOwner']) || isset($_REQUEST['deleteOwner']) ){ 
 	//Update the database here with new information
 
-	if ( isset($_REQUEST['newCity']) ) {
-		//Creates the table for a new city
+	if ( isset($_REQUEST['newOwner']) ) {
+		//Creates the table for a new owner
 		include './MySQLi/create_table_owner.php';
 		$sql= " INSERT INTO owner(ownerName, buildingName) VALUES ('h','h')";
 	

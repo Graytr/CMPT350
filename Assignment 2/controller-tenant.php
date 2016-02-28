@@ -5,7 +5,7 @@ if ( isset($_REQUEST['newTenant']) || isset($_REQUEST['curTenant']) || isset($_R
 	//Update the database here with new information
 
 	if ( isset($_REQUEST['newTenant']) ) {
-		//Creates the table for a new city
+		//Creates the table for a new tenant
 		include './MySQLi/create_table_building.php';
 		$sql= " INSERT INTO tenant(tenantName, telNum, age) VALUES ('h','2', '2')";
 	
