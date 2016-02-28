@@ -68,8 +68,7 @@
 			<form id="inputs" >
 				<fieldset>
 				<legend>Update Room</legend>
-				<p>Room Number Currently In Database: <input type ="number" id="curRoomNum" name="curRoomNum" value="" min="0" required /> </p>
-				<p>Building Name Currently In Database: <input type="text" id="curBuilding" name="curBuilding" value="" maxlength="30" required /> </p>
+				<p>Room ID Currently In Database: <input type ="number" id="curRoomID" name="curRoomID" value="" min="0" required /> </p>
 				<p>Updated Room Number: <input type ="number" id="updateRoomNum" name="updateRoomNum" min="0" value="" required /> </p>
 				<p>Updated Building Name: <input type="text" id="updateBuildingName" name="updateBuildingName" value="" required /> </p>
 				<p>Updated Tenant Name: <input type="text" id="updateTenantName" name="updateTenantName" value="" /> </p>
@@ -85,8 +84,7 @@
 			<form id="inputs" >
 				<fieldset>
 				<legend>Delete Room</legend>
-				<p>Room Number: <input type ="number" id="deleteRoomNum" name="deleteRoomNum" value="" min="0" required /> </p>
-				<p>Building Name: <input type="text" id="deleteBuilding" name="deleteBuilding" value="" maxlength="30" required /> </p>
+				<p>Room ID Currently In Database: <input type ="number" id="deleteRoomID" name="deleteRoomID" value="" min="0" required /> </p>
 				<p><input type="submit" value="Delete"></p> 
 			</form>
 		</div>
