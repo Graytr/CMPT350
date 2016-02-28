@@ -12,7 +12,7 @@
 		include './MySQLi/create_table_building.php';
 		include './MySQLi/create_table_city.php';
 		include './MySQLi/create_table_owner.php';
-		include './MySQLi/create_table_person.php';
+		include './MySQLi/create_table_tenant.php';
 		include './MySQLi/create_table_room.php';
 		$database = "";
 	}

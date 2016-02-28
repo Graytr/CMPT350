@@ -1,13 +1,13 @@
 <?php    
 
 
-if ( isset($_REQUEST['newCity']) || isset($_REQUEST['curCity']) || isset($_REQUEST['deleteCity']) ){ 
+if ( isset($_REQUEST['newRoomNum']) || isset($_REQUEST['curRoomNum']) || isset($_REQUEST['deleteRoomNum']) ){ 
 	//Update the database here with new information
 
-	if ( isset($_REQUEST['newCity']) ) {
+	if ( isset($_REQUEST['newRoomNum']) ) {
 		//Creates the table for a new city
-		include './MySQLi/create_table_city.php';
-		$sql= " INSERT INTO city(cityName, province, country) VALUES ('h','h','h')";
+		include './MySQLi/create_table_building.php';
+		$sql= " INSERT INTO room(roomNum, tenantName, buildingName, rent) VALUES ('h','h', 'h', '2')";
 	
 		//Connects to mySQLi program
 		$conn = new mysqli($servername, $username, $password,"myDatabase");
@@ -19,19 +19,18 @@ if ( isset($_REQUEST['newCity']) || isset($_REQUEST['curCity']) || isset($_REQUE
 			die("Unable to connect to the database server: " . $conn->connect_error);
 		}
 			
-			
 		$database = 'We all good fam';
-			
+						
   		$conn->close();
 	}
 	
-	if ( isset($_REQUEST['curCity']) ) {
+	if ( isset($_REQUEST['curRoomNum']) ) {
 	}
 	
-	if ( isset($_REQUEST['deleteCity']) ) {
+	if ( isset($_REQUEST['deleteRoomNum']) ) {
 	}
 		
-	include 'view-cities.php';
+	include 'view-room.php';
 	exit();
 	
 } else {    
@@ -46,12 +45,12 @@ if ( isset($_REQUEST['newCity']) || isset($_REQUEST['curCity']) || isset($_REQUE
 		include './MySQLi/create_table_building.php';
 		include './MySQLi/create_table_city.php';
 		include './MySQLi/create_table_owner.php';
-		include './MySQLi/create_table_person.php';
+		include './MySQLi/create_table_tenant.php';
 		include './MySQLi/create_table_room.php';
 		$database = "";
 	}
 	
-	include 'view-cities.php';
+	include 'view-room.php';
 
 }    
 

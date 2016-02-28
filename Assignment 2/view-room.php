@@ -20,12 +20,12 @@
 	
 		<div class="sidebar" id="sidebar">
 			<p>
-			<a href="Controller.php">Home</a>
-			<a href="controller-cities.php">Cities</a>					
-			<a href="controller-buildings.php">Buildings</a>					
-			<a href="controller-people.php">People</a>					
-			<a href="controller-rooms.php">Rooms</a>					
-			<a href="controller-owners.php">Owners</a>					
+			<a href="controller.php">Home</a>
+			<a href="controller-city.php">City</a>					
+			<a href="controller-building.php">Building</a>					
+			<a href="controller-tenant.php">Tenant</a>					
+			<a href="controller-room.php">Room</a>					
+			<a href="controller-owner.php">Owner</a>					
 			</p>
 		</div>
 	
@@ -56,7 +56,7 @@
 			<form id="inputs" >
 				<fieldset>
 				<legend>Update Room</legend>
-				<p>Room Number Currently In Database: <input type ="number" id="curNum" name="curNum" value="" min="0" required /> </p>
+				<p>Room Number Currently In Database: <input type ="number" id="curRoomNum" name="curRoomNum" value="" min="0" required /> </p>
 				<p>Building Name Currently In Database: <input type="text" id="curBuilding" name="curBuilding" value="" maxlength="30" required /> </p>
 				<p>Updated Room Number: <input type ="number" id="updateRoomNum" name="updateRoomNum" min="0" value="" required /> </p>
 				<p>Updated Building Name: <input type="text" id="updateBuildingName" name="updateBuildingName" value="" required /> </p>
@@ -73,7 +73,7 @@
 			<form id="inputs" >
 				<fieldset>
 				<legend>Delete Room</legend>
-				<p>Room Number: <input type ="number" id="deleteNum" name="deleteNum" value="" min="0" required /> </p>
+				<p>Room Number: <input type ="number" id="deleteRoomNum" name="deleteRoomNum" value="" min="0" required /> </p>
 				<p>Building Name: <input type="text" id="deleteBuilding" name="deleteBuilding" value="" maxlength="30" required /> </p>
 				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
 			</form>

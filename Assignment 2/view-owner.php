@@ -19,12 +19,12 @@
 	
 		<div class="sidebar" id="sidebar">
 			<p>
-			<a href="Controller.php">Home</a>
-			<a href="controller-cities.php">Cities</a>					
-			<a href="controller-buildings.php">Buildings</a>					
-			<a href="controller-people.php">People</a>					
-			<a href="controller-rooms.php">Rooms</a>					
-			<a href="controller-owners.php">Owners</a>					
+			<a href="controller.php">Home</a>
+			<a href="controller-city.php">City</a>					
+			<a href="controller-building.php">Building</a>					
+			<a href="controller-tenant.php">Tenant</a>					
+			<a href="controller-room.php">Room</a>					
+			<a href="controller-owner.php">Owner</a>					
 			</p>
 		</div>
 	
@@ -54,6 +54,7 @@
 				<fieldset>
 				<legend>Update Owner</legend>
 				<p>Owner Name Currently In Database: <input type ="text" id="curOwner" name="curOwner" maxlength="30" value="" required /> </p>
+				<p>Building Name Currently In Database: <input type="text" id="curBuilding" name="curBuilding" maxlength="30" value="" required /> </p>
 				<p>Updated Owner Name: <input type ="text" id="updateOwner" name="updateOwner" maxlength="30" value="" required /> </p>
 				<p>Updated Building: <input type="text" id="updateBuilding" name="updateBuilding" value="" maxlength="30" required /></p>
 				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 

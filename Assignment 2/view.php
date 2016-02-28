@@ -18,22 +18,17 @@
     
 		<div class="sidebar" id="sidebar">
 			<p>
-			<a href="Controller.php">Home</a>
-			<a href="controller-cities.php">Cities</a>					
-			<a href="controller-buildings.php">Buildings</a>					
-			<a href="controller-people.php">People</a>					
-			<a href="controller-rooms.php">Rooms</a>					
-			<a href="controller-owners.php">Owners</a>					
+			<a href="controller.php">Home</a>
+			<a href="controller-city.php">City</a>					
+			<a href="controller-building.php">Building</a>					
+			<a href="controller-tenant.php">Tenant</a>					
+			<a href="controller-room.php">Room</a>					
+			<a href="controller-owner.php">Owner</a>					
 			</p>
 		</div>
 	
     	<p>This site was created and made so apartment managers could manage their buildings, cities, tentants, rooms, and themselves</p>
 		
-		<?php 
-			echo "This is  a php command";
-			echo "hello world";
-		?>
-    
 
     
     <footer id="footer">

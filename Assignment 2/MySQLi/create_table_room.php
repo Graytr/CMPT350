@@ -6,7 +6,7 @@
 
 	//Create fourth table, room
 	$sql= " CREATE TABLE IF NOT EXISTS room(
-			id Int(10) NOT NULL PRIMARY KEY,
+			roomNum Int(10) NOT NULL PRIMARY KEY,
 			tenantName VARCHAR(30),
 			buildingName VARCHAR(30) NOT NULL,
 			rent Int(5) NOT NULL

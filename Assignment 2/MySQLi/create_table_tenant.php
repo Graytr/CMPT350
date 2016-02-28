@@ -4,10 +4,10 @@
 	$password="";
 	$dbname="myDatabase";
 
-	//Create third table, person
-	$sql= " CREATE TABLE IF NOT EXISTS person(
-			name VARCHAR(30) NOT NULL PRIMARY KEY,
-			phone Int(10) NOT NULL,
+	//Create third table, tenant
+	$sql= " CREATE TABLE IF NOT EXISTS tenant(
+			tenantName VARCHAR(30) NOT NULL PRIMARY KEY,
+			telNum Int(10) NOT NULL,
 			age Int(3) NOT NULL
 		)";
 	$conn= new mysqli($servername,$username,$password,$dbname);
@@ -20,9 +20,9 @@
 	// Create Table
 	if ($conn->query($sql) === TRUE) {
 		//In for testing purposes
-		//echo "Table person created successfully";
+		//echo "Table tenant created successfully";
 	} else {
-		echo "Error creating person table: " . $conn->error;
+		echo "Error creating tenant table: " . $conn->error;
 	}
 
 	$conn->close();

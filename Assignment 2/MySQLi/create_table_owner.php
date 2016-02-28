@@ -7,7 +7,7 @@
 
 	//Create fifth table, owner
 	$sql= " CREATE TABLE IF NOT EXISTS owner(
-			name VARCHAR(30) NOT NULL PRIMARY KEY,
+			ownerName VARCHAR(30) NOT NULL PRIMARY KEY,
 			buildingName VARCHAR(30) NOT NULL
 		)";
 	$conn= new mysqli($servername,$username,$password,$dbname);	
