@@ -66,7 +66,6 @@
 				<fieldset>
 				<legend>Update Owner</legend>
 				<p>Owner Name Currently In Database: <input type ="text" id="curOwner" name="curOwner" maxlength="30" value="" required /> </p>
-				<p>Building Name Currently In Database: <input type="text" id="curBuilding" name="curBuilding" maxlength="30" value="" required /> </p>
 				<p>Updated Owner Name: <input type ="text" id="updateOwner" name="updateOwner" maxlength="30" value="" required /> </p>
 				<p>Updated Building: <input type="text" id="updateBuilding" name="updateBuilding" value="" maxlength="30" required /></p>
 				<p><input type="submit" value="Update"></p> 
