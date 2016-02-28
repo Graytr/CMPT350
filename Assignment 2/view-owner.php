@@ -31,7 +31,19 @@
     	<p>This page is for the owners table</p>
 		
 		<!--THIS CODE SHOULD OUTPUT THE DATABASE TABLE GIVEN TO IT FROM THE CONTROLLER-->
-		<?php echo $database; ?>
+		<div id="form">
+			<form id="output">
+				<?php echo $database; ?>
+			</form>
+		</div>
+		
+		<br>
+		
+		<div id="form">
+			<form id="output">
+				<?php echo $errorMessage; ?>
+			<form>
+		</div>
 		
 		<!-- CODE FOR THE FORM TO ADD AN OWNER -->
 		<p>To create a new owner in the database, please fill out the below form</p> 
@@ -42,7 +54,7 @@
 				<legend>Add New Owner</legend>
 				<p>Owner Name: <input type ="text" id="newOwner" name="newOwner" maxlength="30" value="" required /> </p>
 				<p>Building: <input type="text" id="newBuilding" name="newBuilding" value="" maxlength="30" required /></p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
+				<p><input type="submit" value="Add"></p> 
 			</form>
 		</div>
 
@@ -57,7 +69,7 @@
 				<p>Building Name Currently In Database: <input type="text" id="curBuilding" name="curBuilding" maxlength="30" value="" required /> </p>
 				<p>Updated Owner Name: <input type ="text" id="updateOwner" name="updateOwner" maxlength="30" value="" required /> </p>
 				<p>Updated Building: <input type="text" id="updateBuilding" name="updateBuilding" value="" maxlength="30" required /></p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 
+				<p><input type="submit" value="Update"></p> 
 			</form>
 		</div>
     
@@ -69,11 +81,11 @@
 				<fieldset>
 				<legend>Delete Owner</legend>
 				<p>Owner Name: <input type ="text" id="deleteOwner" name="deleteOwner" maxlength="30" value="" required /> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
+				<p><input type="submit" value="Delete"></p> 
 			</form>
 		</div>
 		
-		<p></p>
+		<br>
     
 		<footer id="footer">
 			2016 (c) Travis Gray, Halle Jackson

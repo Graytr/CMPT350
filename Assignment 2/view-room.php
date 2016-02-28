@@ -32,7 +32,19 @@
     	<p>This page is for the rooms table</p>
 		
 		<!--THIS CODE SHOULD OUTPUT THE DATABASE TABLE GIVEN TO IT FROM THE CONTROLLER-->
-		<?php echo $database; ?>
+		<div id="form">
+			<form id="output">
+				<?php echo $database; ?>
+			</form>
+		</div>
+		
+		<br>
+		
+		<div id="form">
+			<form id="output">
+				<?php echo $errorMessage; ?>
+			<form>
+		</div>
 		
 		<!-- CODE FOR THE FORM TO ADD A ROOM -->
 		<p>To create a new room in the database, please fill out the below form</p> 
@@ -45,7 +57,7 @@
 				<p>Building Name: <input type="text" id="newBuildingName" name="newBuildingName" value="" required /> </p>
 				<p>Tenant Name: <input type="text" id="newTenantName" name="newTenantName" value="" /> </p>
 				<p>Rent: <input type="number" id="newRent" name="newRent" value="" max="99999" min="0" required/> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
+				<p><input type="submit" value="Add"></p> 
 			</form>
 		</div>
 
@@ -62,7 +74,7 @@
 				<p>Updated Building Name: <input type="text" id="updateBuildingName" name="updateBuildingName" value="" required /> </p>
 				<p>Updated Tenant Name: <input type="text" id="updateTenantName" name="updateTenantName" value="" /> </p>
 				<p>Updated Rent: <input type="number" id="updateRent" name="updateRent" value="" max="99999" min="0" required/> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 
+				<p><input type="submit" value="Update"></p> 
 			</form>
 		</div>
     
@@ -75,11 +87,11 @@
 				<legend>Delete Room</legend>
 				<p>Room Number: <input type ="number" id="deleteRoomNum" name="deleteRoomNum" value="" min="0" required /> </p>
 				<p>Building Name: <input type="text" id="deleteBuilding" name="deleteBuilding" value="" maxlength="30" required /> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
+				<p><input type="submit" value="Delete"></p> 
 			</form>
 		</div>
     
-		<p></p>
+		<br>
 		
     
 		<footer id="footer">

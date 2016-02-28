@@ -32,7 +32,19 @@
     	<p>This page is for the buildings table</p>
 		
 		<!--THIS CODE SHOULD OUTPUT THE DATABASE TABLE GIVEN TO IT FROM THE CONTROLLER-->
-		<?php echo $database; ?>
+		<div id="form">
+			<form id="output">
+				<?php echo $database; ?>
+			</form>
+		</div>
+		
+		<br>
+		
+		<div id="form">
+			<form id="output">
+				<?php echo $errorMessage; ?>
+			<form>
+		</div>
 		
 		<!-- CODE FOR THE FORM TO ADD A BUILDING -->
 		<p>To create a new building in the database, please fill out the below form</p> 
@@ -46,7 +58,7 @@
 				<p>Address: <input type="text" id="newAddress" name="newAddress" value="" maxlength="30" required/> </p>
 				<p>Postal Code: <input type="text" id="newPostalCode" name="newPostalCode" value="" maxlength="7" required/> </p>
 				<p>Number of Rooms: <input type="number" id="newNumRooms" name="newNumRooms" value="" min="0" max="9999999" required/> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
+				<p><input type="submit" value="Add"></p> 
 			</form>
 		</div>
 
@@ -63,7 +75,7 @@
 				<p>Updated Address: <input type="text" id="updateAddress" name="updateAddress" value="" maxlength="30" required/> </p>
 				<p>Updated Postal Code: <input type="text" id="updatePostalCode" name="updatePostalCode" value="" maxlength="7" required/> </p>
 				<p>Updated Number of Rooms: <input type="number" id="updateNumRooms" name="updateNumRooms" value="" min="0" max="9999999" required/> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 
+				<p><input type="submit" value="Update"></p> 
 			</form>
 		</div>
     
@@ -75,11 +87,11 @@
 				<fieldset>
 				<legend>Delete Building</legend>
 				<p>Building Name: <input type ="text" id="deleteBuildingName" name="deleteBuildingName" maxlength="30" value="" required /> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
+				<p><input type="submit" value="Delete"></p> 
 			</form>
 		</div>
 		
-		<p></p>
+		<br>
 	
 		<footer id="footer">
 			2016 (c) Travis Gray, Halle Jackson

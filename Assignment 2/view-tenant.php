@@ -30,7 +30,19 @@
     	<p>This page is for the tenant table</p>
 		
 		<!--THIS CODE SHOULD OUTPUT THE DATABASE TABLE GIVEN TO IT FROM THE CONTROLLER-->
-		<?php echo $database; ?>
+		<div id="form">
+			<form id="output">
+				<?php echo $database; ?>
+			</form>
+		</div>
+		
+		<br>
+		
+		<div id="form">
+			<form id="output">
+				<?php echo $errorMessage; ?>
+			<form>
+		</div>
 		
 		<!-- CODE FOR THE FORM TO ADD A TENANT -->
 		<p>To create a new Tenant in the database, please fill out the below form</p> 
@@ -42,7 +54,7 @@
 				<p>Name: <input type ="text" id="newTenant" name="newTenant" maxlength="30" value="" required /> </p>
 				<p>Telephone Number: <input type="tel" id="newTel" name="newTel" value="" maxlength="30" required /></p>
 				<p>Age: <input type="number" id="newAge" name="newAge" value="" max="999" min="0" required/> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
+				<p><input type="submit" value="Add"></p> 
 			</form>
 		</div>
 
@@ -57,7 +69,7 @@
 				<p>Updated Name: <input type ="text" id="updateTenant" name="updateTenant" maxlength="30" value="" required /> </p>
 				<p>Updated Telephone Number: <input type="tel" id="updateTel" name="updateTel" value="" maxlength="30" required /></p>
 				<p>Updated Age: <input type="number" id="updateAge" name="updateAge" value="" max="999" min="0" required/> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 
+				<p><input type="submit" value="Update"></p> 
 			</form>
 		</div>
     
@@ -69,11 +81,11 @@
 				<fieldset>
 				<legend>Delete Tenant</legend>
 				<p>Tenant Name: <input type ="text" id="deleteTenant" name="deleteTenant" maxlength="30" value="" required /> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
+				<p><input type="submit" value="Delete"></p> 
 			</form>
 		</div>
     
-        <p></p>
+        <br>
 		
 		<footer id="footer">
 			2016 (c) Travis Gray, Halle Jackson

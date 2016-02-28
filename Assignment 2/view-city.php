@@ -31,7 +31,19 @@
     	<p>This page is for the cities table</p>
 		
 		<!--THIS CODE SHOULD OUTPUT THE DATABASE TABLE GIVEN TO IT FROM THE CONTROLLER-->
-		<?php echo $database; ?>
+		<div id="form">
+			<form id="output">
+				<?php echo $database; ?>
+			</form>
+		</div>
+		
+		<br>
+		
+		<div id="form">
+			<form id="output">
+				<?php echo $errorMessage; ?>
+			<form>
+		</div>
 		
 		<!-- CODE FOR THE FORM TO ADD A CITY -->
 		<p>To create a new city in the database, please fill out the below form</p> 
@@ -43,7 +55,7 @@
 				<p>City Name: <input type ="text" id="newCity" name="newCity" maxlength="30" value="" required /> </p>
 				<p>Province: <input type="text" id="newProvince" name="newProvince" value="" maxlength="30" required /></p>
 				<p>Country: <input type="text" id="newCountry" name="newCountry" value="" maxlength="30" required/> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Add"></p> 
+				<p><input type="submit" value="Add"></p> 
 			</form>
 		</div>
 
@@ -58,7 +70,7 @@
 				<p>Updated City Name: <input type ="text" id="updateCity" name="updateCity" maxlength="30" value="" required /> </p>
 				<p>Updated Province: <input type="text" id="updateProvince" name="updateProvince" value="" maxlength="30" required /></p>
 				<p>Updated Country: <input type="text" id="updateCountry" name="updateCountry" value="" maxlength="30" required/> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Update"></p> 
+				<p><input type="submit" value="Update"></p> 
 			</form>
 		</div>
     
@@ -70,11 +82,11 @@
 				<fieldset>
 				<legend>Delete City</legend>
 				<p>City Name: <input type ="text" id="deleteCity" name="deleteCity" maxlength="30" value="" required /> </p>
-				<p><input type="submit" onclick="alert('INSERT SCRIPT HERE')" value="Delete"></p> 
+				<p><input type="submit" value="Delete"></p> 
 			</form>
 		</div>
 		
-		<p></p>
+		<br>
     
     
 		<footer id="footer">
