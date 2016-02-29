@@ -55,3 +55,6 @@ URL TO THE APPLICATION
 	http://cmpt350apartments.tk/Assignment%202/controller.php
 	
 	(We have our own domain name)
+
+	The script to start the database is embedded into our program code. Therefore, just running any
+	webpage will allow the database to be enabled.
