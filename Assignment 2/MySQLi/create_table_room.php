@@ -4,9 +4,9 @@
 	$password="";
 	$dbname="myDatabase";
 
-	//Create fourth table, room
+	//Create second table, building
 	$sql= " CREATE TABLE IF NOT EXISTS room(
-			id Int(10) NOT NULL AUTO INCREMENT PRIMARY KEY,
+			id Int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
 			roomNum Int(10) NOT NULL,
 			tenantName VARCHAR(30),
 			buildingName VARCHAR(30) NOT NULL,
@@ -22,7 +22,7 @@
 	// Create Table
 	if ($conn->query($sql) === TRUE) {
 		//In for testing purposes
-		//echo "Table room created successfully";
+		//echo "Table building created successfully";
 	} else {
 		echo "Error creating room table: " . $conn->error;
 	}
