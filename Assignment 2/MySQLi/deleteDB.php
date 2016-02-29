@@ -14,10 +14,10 @@
 	$sql = "DROP DATABASE IF NOT EXISTS myDatabase";
 	if ($conn->query($sql) === TRUE) {
 		//TESTING PURPOSES V
-		echo "Database deleted successfully";
+		//echo "Database deleted successfully";
 	} else {
 		//TESTING PURPOSES V
-		echo "Error creating database: " . $conn->error;
+		//echo "Error deleting database: " . $conn->error;
 	}
 	$conn->close();
 ?>

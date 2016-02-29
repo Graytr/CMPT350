@@ -17,7 +17,7 @@
 		//echo "Database created successfully";
 	} else {
 		//TESTING PURPOSES V
-		echo "Error creating database: " . $conn->error;
+		//echo "Error creating database: " . $conn->error;
 	}
 	$conn->close();
 ?>

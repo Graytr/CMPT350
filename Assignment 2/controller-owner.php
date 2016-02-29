@@ -65,7 +65,6 @@ if ( isset($_REQUEST['newOwner']) || isset($_REQUEST['curOwner']) || isset($_REQ
 		
 	$sql = "DESCRIBE owner";
 	$results = $conn->query($sql);
-	var_dump( $results);
 	$conn->close();
 	
 		
@@ -88,7 +87,7 @@ if ( isset($_REQUEST['newOwner']) || isset($_REQUEST['curOwner']) || isset($_REQ
 		include './MySQLi/create_table_room.php';
 		$database = "";
 		
-		$sql="SELECT * FROM owner";
+		$sql="SELECT ownerName, buildingName FROM owner";
 		$results = $link->query($sql);
 		echo $link->error;
 		$database = "";
