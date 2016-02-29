@@ -54,7 +54,7 @@ STEPS WE DID TO DEPLOY TO THE CLOUD
 URL TO THE APPLICATION
 	http://cmpt350apartments.tk/Assignment%202/controller.php
 	
-	(We have our own domain name)
+	(We have our own domain name: if the domain fails, use 54.191.175.4/Assignment%202/controller.php)
 
 	The script to start the database is embedded into our program code. Therefore, just running any
 	webpage will allow the database to be enabled.
