@@ -1,0 +1,57 @@
+CMPT 350 – Assignment 2 Document
+Assignment done by:
+	Halle Jackson – hsj294
+	Travis Gray – tlg609
+
+THE OBJECTIVE OF THE APPLICATION
+	We decided to use an apartment manager example for our database as it was a simple 
+	idea and had tables in which CRUD operations would be applicable. We made this application 
+	as an example for databases and as something that we thought one managing an apartment 
+	system may be interested in, allowing them to store cities, buildings, rooms, tenants, 
+	and finally the owners. 
+
+EXPLAINATION OF THE DATABASE MODEL
+	The database model we selected was simple. It had an overall database called “myDatabase” 
+	and within had five unconnected tables. These tables were city, building, tenant, room, 
+	and owner. Each table had fields and primary keys that we felt would be valuable to one 
+	trying to manage the system. Each table and their fields are in the system as they are below:
+	
+	city
+		cityName – Primary key
+		province
+		country
+		
+	building
+		buildingName – Primary key
+		cityName
+		address
+		postalCode
+		numberRooms
+		
+	tenant
+		tenantName – Primary key
+		telNum
+		age
+		
+	owner
+		ownerName – Primary key
+		buildingName
+		
+	room
+		id – Primary key
+		roomNum
+		tenantName
+		buildingName
+		rent
+
+
+STEPS WE DID TO DEPLOY TO THE CLOUD
+	We followed the steps highlighted by the posted slideshow (Lecture 19). 
+	We faced some issues when dealing with Amazon Web Services when trying to access the 
+	localhost, however we added a rule into our instance to allow HTTP access and solved that 
+	issue.
+
+URL TO THE APPLICATION
+	http://cmpt350apartments.tk/Assignment%202/controller.php
+	
+	(We have our own domain name)
