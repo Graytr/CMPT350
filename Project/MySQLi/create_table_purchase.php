@@ -10,7 +10,7 @@
 			customerName VARCHAR (50) NOT NULL,
 			date VARCHAR (30) NOT NULL,
 			cost DOUBLE PRECISION(6,2) NOT NULL,
-			frame VARCHAR (30) NOT NULL,
+			frame VARCHAR (60) NOT NULL,
 			rightSphere DOUBLE PRECISION(4,2),
 			leftSphere DOUBLE PRECISION(4,2),
 			rightCyl DOUBLE PRECISION(4,2),
