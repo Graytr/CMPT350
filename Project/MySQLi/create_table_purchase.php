@@ -9,7 +9,7 @@
 			id Int(10) AUTO INCREMENT PRIMARY KEY,
 			customer VARCHAR (30) NOT NULL,
 			date VARCHAR (30) NOT NULL,
-			cost DOUBLE PRECISION(6,2),
+			cost DOUBLE PRECISION(6,2) NOT NULL,
 			frame VARCHAR (30) NOT NULL,
 			rightSphere DOUBLE PRECISION(4,2),
 			leftSphere DOUBLE PRECISION(4,2),
@@ -38,7 +38,7 @@
 		//In for testing purposes
 		//echo "Table purchase created successfully";
 	} else {
-		echo "Error creating purchasae table: " . $conn->error;
+		echo "Error creating purchase table: " . $conn->error;
 	}
 
 	$conn->close();

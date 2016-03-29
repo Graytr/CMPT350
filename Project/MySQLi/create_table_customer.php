@@ -10,10 +10,9 @@
 			address VARCHAR(30) NOT NULL,
 			postalCode VARCHAR(7) NOT NULL,
 			city VARCHAR (30) NOT NULL,
-			country VARCHAR (30) NOT NULL,
 			telNum Int(10) NOT NULL,
 			email VARCHAR (30) NOT NULL,
-			notes VARCHAR (100) 
+			notes VARCHAR (1000) 
 		)";
 	$conn= new mysqli($servername,$username,$password,$dbname);
 	
