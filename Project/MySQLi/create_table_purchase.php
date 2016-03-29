@@ -7,7 +7,7 @@
 	//Create third table, purchase
 	$sql= " CREATE TABLE IF NOT EXISTS purchase(
 			id Int(10) AUTO INCREMENT PRIMARY KEY,
-			customer VARCHAR (30) NOT NULL,
+			customerName VARCHAR (50) NOT NULL,
 			date VARCHAR (30) NOT NULL,
 			cost DOUBLE PRECISION(6,2) NOT NULL,
 			frame VARCHAR (30) NOT NULL,
