@@ -33,6 +33,19 @@ body {
 	width:65%;
 	text-align:center;
 	margin-left:18%;
+/*	display:none; */
+}
+
+#hideNew {
+	display:none;
+}
+
+#hideUpdate {
+	display:none;
+}
+
+#hideDelete{
+	display:none;
 }
 
 a:link, a:visited , a:active{
@@ -47,4 +60,13 @@ a:link, a:visited , a:active{
 a:hover{
     background-color: white;
 	color:blue;
+}
+
+#options{
+	background-color: blue;
+    color: white;
+    padding: 1% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
