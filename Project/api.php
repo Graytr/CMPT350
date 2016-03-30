@@ -2,6 +2,8 @@
 
 
 require_once('./Controller/Employee_Controller.php');
+require_once('./Controller/Customer_Controller.php');
+require_once('./Controller/Purchase_Controller.php');
 
 function getCurrentUri()
   {
@@ -28,6 +30,8 @@ function getCurrentUri()
   }
 
   $objEmployee_Controller= new Employee_Controller();
+  $objCustomer_Controller= new Customer_Controller();
+  $objPurchase_Controller= new Purchase_Controller();
   $method = $_SERVER['REQUEST_METHOD'];
 
  /*
@@ -47,6 +51,30 @@ function getCurrentUri()
 		}
 		$input = json_decode(file_get_contents('php://input'),true);
 		echo ($objEmployee_Controller->setQuery($method,$input));
+	} 
+	else if ($routes[0]=="customer")
+	{
+		if(isset($routes[1]))
+		{
+			if(preg_match('/[0-9]*/',$routes[1]))
+			{
+			  $objCustomer_Controller->setParameters($routes);
+			}
+		}
+		$input = json_decode(file_get_contents('php://input'),true);
+		echo ($objCustomer_Controller->setQuery($method,$input));
+	}
+	else if ($routes[0]=="purchase") 
+	{
+		if(isset($routes[1]))
+		{
+			if(preg_match('/[0-9]*/',$routes[1]))
+			{
+			  $objPurchase_Controller->setParameters($routes);
+			}
+		}
+		$input = json_decode(file_get_contents('php://input'),true);
+		echo ($objPurchase_Controller->setQuery($method,$input));
 	}
   }
 
