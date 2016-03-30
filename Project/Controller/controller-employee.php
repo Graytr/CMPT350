@@ -67,7 +67,7 @@ if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUE
 	$conn->close();
 
 		
-  	include 'view-employee.php';
+  	include './../View/view-employee.php';
 	exit();
 	
 } else {    
@@ -102,7 +102,7 @@ if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUE
 		
 	}
 	
-  	include 'view-employee.php';
+  	include './../View/view-employee.php';
 
 }    
 

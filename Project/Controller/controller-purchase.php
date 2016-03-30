@@ -80,7 +80,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curID']) || isset($
 	$conn->close();
 
 		
-  	include 'view-purchase.php';
+  	include './../View/view-purchase.php';
 	exit();
 	
 } else {    
@@ -118,7 +118,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curID']) || isset($
 		
 	}
 	
-  	include 'view-purchase.php';
+  	include './../View/view-purchase.php';
 
 }    
 

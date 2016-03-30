@@ -83,7 +83,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 	$conn->close();
 
 		
-  	include 'view-customer.php';
+  	include './../View/view-customer.php';
 	exit();
 	
 } else {    
@@ -122,7 +122,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 		
 	}
 	
-  	include 'view-customer.php';
+  	include './../View/view-customer.php';
 
 }    
 
