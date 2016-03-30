@@ -18,7 +18,7 @@
 			<span id = "header">Clearly Glasses</span>
 			<a href="view-home.html">Home</a>
 			<a href="view-employee.html">Employee</a>					
-			<a href="view-customer.html">Customer</a>					
+			<a href="controller-customer.php">Customer</a>					
 			<a href="view-purchase.html">Purchase</a>					
 			<a href="view-login.html">Log Out</a>									
 			</p>
@@ -52,7 +52,7 @@
 			<p>To create a new customer in the database, please fill out the below form</p> 
 			
 			<div id ="form">
-				<form id="inputs" action="" method="post" >
+				<form id="inputs" action="controller-customer.php" method="post" >
 					<fieldset>
 					<legend>Add New Customer</legend>
 					<p>Customer Name: <input type ="text" id="newCustomerName" name="newCustomerName" maxlength="50" value="" required /> </p>
@@ -73,7 +73,7 @@
 			
 			<!-- CODE FOR THE FORM TO UPDATE A CUSTOMER -->
 			<div id ="form">
-				<form id="inputs" >
+				<form id="inputs" action="controller-customer.php" method="post" >
 					<fieldset>
 					<legend>Update Customer</legend>
 					<p>Customer Name Currently In Database: <input type ="text" id="curCustomerName" name="curCustomerName" maxlength="50" value="" required /> </p>
@@ -95,7 +95,7 @@
 			
 			<!-- CODE FOR THE FORM TO DELETE A CUSTOMER -->
 			<div id ="form">
-				<form id="inputs" >
+				<form id="inputs" action="controller-customer.php" method="post" >
 					<fieldset>
 					<legend>Delete Customer</legend>
 					<p>Customer Name: <input type ="text" id="deleteCustomerName" name="deleteCustomerName" maxlength="50" value="" required /> </p>
