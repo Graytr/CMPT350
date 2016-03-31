@@ -4,11 +4,11 @@
 	<head>
     	<meta charset="UTF-8">
 		<title>Clearly Glasses</title>
-		<link href="Glasses.css" rel="stylesheet" type="text/css" /> <!-- For our future css script -->
+		<link href="./Glasses.css" rel="stylesheet" type="text/css" /> <!-- For our future css script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
         	</script> <!-- if we want jquery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> <!-- For Angular Javascript-->
-		<script src="hideAndShow.js"></script> <!-- Used for hiding and showing sections-->
+		<script src="./hideAndShow.js"></script> <!-- Used for hiding and showing sections-->
     </head>
     
 	<body>
@@ -16,11 +16,11 @@
 		<div class="sidebar" id="sidebar">
 			<p>
 			<span id = "header">Clearly Glasses</span>
-			<a href="view-home.html">Home</a>
-			<a href="view-employee.html">Employee</a>					
+			<a href="controller-home.php">Home</a>
+			<a href="controller-employee.php">Employee</a>					
 			<a href="controller-customer.php">Customer</a>					
-			<a href="view-purchase.html">Purchase</a>					
-			<a href="view-login.html">Log Out</a>									
+			<a href="controller-purchase.php">Purchase</a>					
+			<a href="controller-login.php">Log Out</a>									
 			</p>
 		</div>
 		
