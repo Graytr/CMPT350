@@ -156,7 +156,7 @@
 				<div id="form">
 					<form id="output">
 						<?php echo $errorMessage; ?>
-					<form>
+					</form>
 				</div>
 			</div>
 		</div>
