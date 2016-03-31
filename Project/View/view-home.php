@@ -17,21 +17,23 @@
 		<div class="sidebar" id="sidebar">
 			<p>
 			<span id = "header">Clearly Glasses</span>
-			<a href="view-home.html">Home</a>
-			<a href="view-employee.html">Employee</a>					
-			<a href="view-customer.html">Customer</a>					
-			<a href="view-purchase.html">Purchase</a>					
+			<a href="controller-home.html">Home</a>
+			<a href="controller-employee.html">Employee</a>					
+			<a href="controller-customer.html">Customer</a>					
+			<a href="controller-purchase.html">Purchase</a>					
 			<a href="view-login.html">Log Out</a>									
 			</p>
 		</div>
 	
     	<p>This site was created and made so glasses store owners could manage their employees, customers, and purchases.</p>
 		<p>Need to do: <br>
+		MySQL Database (done) <br>
+		API (done) <br>
+		CRUD operations (done) <br>
+		Log in<br>
 		Get in Google Map API <br>
-		Communicating to the database <br>
-		CRUD operations<br>
-		API for Database<br>
-		and more<br>
+		Deploy<br>
+		Creativity???? <br>
 		</p>
 		
 		

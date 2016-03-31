@@ -29,23 +29,13 @@ body {
       font-size:18px;
 }
 
-#form {
-	width:65%;
-	text-align:center;
-	margin-left:18%;
-/*	display:none; */
-}
-
-#hideNew {
-	display:none;
-}
-
-#hideUpdate {
-	display:none;
-}
-
-#hideDelete{
-	display:none;
+#options{
+	background-color: blue;
+    color: white;
+    padding: 1% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 
 a:link, a:visited , a:active{
@@ -62,11 +52,45 @@ a:hover{
 	color:blue;
 }
 
-#options{
-	background-color: blue;
-    color: white;
-    padding: 1% 1%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+#grid {
+      display: table;
+      border: 1px;
+      border-spacing: 5px;
+      width:100%;
 }
+
+#grid-row {
+      display:table-row;
+      width: auto;
+}
+
+#grid-column {
+      float:left;
+      display: table-column;
+      width: 50%;
+}
+
+#form {
+	width:65%;
+	text-align:left;
+	margin-left:18%;
+}
+
+#center {
+	text-align:center;
+}
+
+#hideNew {
+	display:none;
+}
+
+#hideUpdate {
+	display:none;
+}
+
+#hideDelete{
+	display:none;
+}
+
+
+
