@@ -84,7 +84,7 @@ if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUE
 		include 'MySQLi/create_table_purchase.php';
 		$database = "";
 		
-		$sql="SELECT * FROM room";
+		$sql="SELECT * FROM employee";
 		$results=$link->query($sql);
 		$database = "";
 		if($results->num_rows >0){

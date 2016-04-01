@@ -100,7 +100,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 		include 'MySQLi/create_table_purchase.php';
 		$database = "";
 		
-		$sql="SELECT * FROM room";
+		$sql="SELECT * FROM customer";
 		$results=$link->query($sql);
 		$database = "";
 		if($results->num_rows >0){
