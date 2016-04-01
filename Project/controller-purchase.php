@@ -1,6 +1,6 @@
 <?php    
 
-require './../MySQLi/create_table_purchase.php';
+require 'MySQLi/create_table_purchase.php';
 $errorMessage = "";
 
 if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curID']) || isset($_REQUEST['deleteID']) ){ 
@@ -80,7 +80,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curID']) || isset($
 	$conn->close();
 
 		
-  	include './../View/view-purchase.php';
+  	include 'view-purchase.php';
 	exit();
 	
 } else {    
@@ -91,10 +91,10 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curID']) || isset($
 	if (!$link)	{ 
 		$database = 'Unable to connect to the database server.' . mysql_error(); 
 	} else {
-		include './../MySQLi/createDB.php';
-		include './../MySQLi/create_table_customer.php';
-		include './../MySQLi/create_table_employee.php';
-		include './../MySQLi/create_table_purchase.php';
+		include 'MySQLi/createDB.php';
+		include 'MySQLi/create_table_customer.php';
+		include 'MySQLi/create_table_employee.php';
+		include 'MySQLi/create_table_purchase.php';
 		$database = "";
 		
 		$sql="SELECT * FROM purchase";
@@ -118,7 +118,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curID']) || isset($
 		
 	}
 	
-  	include './../View/view-purchase.php';
+  	include 'view-purchase.php';
 
 }    
 

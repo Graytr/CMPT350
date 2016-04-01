@@ -1,6 +1,6 @@
 <?php    
 
-require './../MySQLi/create_table_employee.php';
+require 'MySQLi/create_table_employee.php';
 $errorMessage = "";
 
 if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUEST['deleteName']) ){ 
@@ -67,7 +67,7 @@ if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUE
 	$conn->close();
 
 		
-  	include './../View/view-employee.php';
+  	include 'view-employee.php';
 	exit();
 	
 } else {    
@@ -78,10 +78,10 @@ if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUE
 	if (!$link)	{ 
 		$database = 'Unable to connect to the database server.' . mysql_error(); 
 	} else {
-		include './../MySQLi/createDB.php';
-		include './../MySQLi/create_table_customer.php';
-		include './../MySQLi/create_table_employee.php';
-		include './../MySQLi/create_table_purchase.php';
+		include 'MySQLi/createDB.php';
+		include 'MySQLi/create_table_customer.php';
+		include 'MySQLi/create_table_employee.php';
+		include 'MySQLi/create_table_purchase.php';
 		$database = "";
 		
 		$sql="SELECT * FROM room";
@@ -102,7 +102,7 @@ if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUE
 		
 	}
 	
-  	include './../View/view-employee.php';
+  	include 'view-employee.php';
 
 }    
 

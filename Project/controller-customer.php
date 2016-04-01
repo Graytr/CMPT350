@@ -1,6 +1,6 @@
 <?php    
 
-require './../MySQLi/create_table_customer.php';
+require 'MySQLi/create_table_customer.php';
 $errorMessage = "";
 
 if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) || isset($_REQUEST['deleteCustomerName']) ){ 
@@ -83,7 +83,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 	$conn->close();
 
 		
-  	include './../View/view-customer.php';
+  	include 'view-customer.php';
 	exit();
 	
 } else {    
@@ -94,10 +94,10 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 	if (!$link)	{ 
 		$database = 'Unable to connect to the database server.' . mysql_error(); 
 	} else {
-		include './../MySQLi/createDB.php';
-		include './../MySQLi/create_table_customer.php';
-		include './../MySQLi/create_table_employee.php';
-		include './../MySQLi/create_table_purchase.php';
+		include 'MySQLi/createDB.php';
+		include 'MySQLi/create_table_customer.php';
+		include 'MySQLi/create_table_employee.php';
+		include 'MySQLi/create_table_purchase.php';
 		$database = "";
 		
 		$sql="SELECT * FROM room";
@@ -122,7 +122,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 		
 	}
 	
-  	include './../View/view-customer.php';
+  	include 'view-customer.php';
 
 }    
 

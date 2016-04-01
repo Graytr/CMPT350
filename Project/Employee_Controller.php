@@ -1,8 +1,8 @@
 <?php 
-require_once('./../Model/Connection.php');
-require_once('./../Model/Customer.php');
+require_once('Model/Connection.php');
+require_once('Model/Employee.php');
 
-class Customer_Controller{
+class Employee_Controller{
 	private $dbInstance;
 	private $sql;
 	private $numberRows=0 ;
@@ -88,18 +88,18 @@ function setAlterQuery($input){
 	
 
 	function readAll(){
-		return Customer::all();
+		return Employee::all();
 	}
 
 	function find($id){
-		return Customer::find($id);
+		return Employee::find($id);
 	}
 
 	function update(){
-		return Customer::update($this->set,$this->key);
+		return Employee::update($this->set,$this->key);
 	}
 	function create(){
-		return Customer::create($this->set);
+		return Employee::create($this->set);
 	}
 	function delete(){
 
