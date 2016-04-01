@@ -102,11 +102,11 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curID']) || isset($
 		$database = "";
 		if($results->num_rows >0){
 			while($row=$results->fetch_assoc()){
-				$database .= "id: " . $row['id'] .
+				$database = "id: " . $row['id'] .
 					 ", Purchased By: " . $row['customerName'] .
 					 ", For: $" . $row['cost'] .
 					 ", Date: " . $row['date'] .
-					 ", frame: " . $row['frame'] . "<br>";
+					 ", frame: " . $row['frame'] . "<br>" . $database;
 			}	
 		}else{
 			$database = "0 results in purchase table";

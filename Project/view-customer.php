@@ -24,6 +24,22 @@
 			</p>
 		</div>
 		
+		<script>
+			function loginFunction() {
+				alert("You are not logged in");
+
+				do {
+					var username = prompt("Please enter your username", "").toLowercase();
+					var password = prompt("Please enter your password", "");
+					
+				} while(!this.validUsernameAndPassword(username, password));
+			}
+			
+			function validUsernameAndPassword(username, password){
+				return true;
+			}
+		</script>
+		<p id="options" onclick="loginFunction()">Log In</p>
 		
 		<!-- CODE FOR THE OPTIONS MENU -->
 		<p id="options" onclick="showNew()">Add Customer</p>	

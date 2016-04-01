@@ -17,11 +17,11 @@
 	 	<div class="sidebar" id="sidebar">
 			<p>
 			<span id = "header">Clearly Glasses</span>
-			<a href="controller-home.html">Home</a>
-			<a href="controller-employee.html">Employee</a>					
-			<a href="controller-customer.html">Customer</a>					
-			<a href="controller-purchase.html">Purchase</a>					
-			<a href="view-login.html">Log Out</a>									
+			<a href="controller-home.php">Home</a>
+			<a href="controller-employee.php">Employee</a>					
+			<a href="controller-customer.php">Customer</a>					
+			<a href="controller-purchase.php">Purchase</a>					
+			<a href="view-login.php">Log Out</a>									
 			</p>
 		</div>
 		

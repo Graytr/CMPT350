@@ -107,7 +107,7 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 			while($row=$results->fetch_assoc()){
 				$database .= "Name: " . $row['customerName'] .
 					 ", Address: " . $row['address'] .
-					 ", Postal Code" . $row['postalCode'] .
+					 ", Postal Code: " . $row['postalCode'] .
 					 ", City: " . $row['city'] .
 					 ", Telephone: " . $row['telNum'] . 
 					 ", Email: " . $row['email'] . "<br>";
