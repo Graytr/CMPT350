@@ -1,7 +1,9 @@
-body {
+html, body {
       text-align:center;
       background:white;
       color: black;
+	  height:100%;
+	  margin:0 auto;
      }
 
 #header {
@@ -21,7 +23,7 @@ body {
 
 #sidebar {
       width:100%;
-	  height: 5%;
+	  height: 16%;
       background:blue;
 	  color:white;
 	  text-align:right;
@@ -94,6 +96,12 @@ input[type=number] {
 
 #hideDelete{
 	display:none;
+}
+
+#map {
+	height:50%;
+	width:50%;
+	margin-left:25%;
 }
 
 
