@@ -58,13 +58,23 @@
 								<legend>Add New Employee</legend>
 								<!-- GRID FOR THE NEW EMPLOYEE FORM -->
 								<div id ="grid">
+								
+									<!--FIRST ROW-->
 									<div id="grid-row">
 										<div id="grid-column">
 											<p>Name:</p>
-											<p>Wage:</p>
 										</div>
 										<div id="grid-column">
 											<p><input type ="text" id="newName" name="newName" maxlength="30" value="" required /> </p>
+										</div>
+									</div>
+									
+									<!--SECOND ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Wage:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="number" id="newWage" name="newWage" value="" min="0" max="999.99" step="0.01" required /></p>
 										</div>
 									</div>
@@ -87,25 +97,42 @@
 								
 								<!-- GRID FOR THE UPDATE EMPLOYEE FORM -->
 								<div id ="grid">
+									<!-- FIRST ROW -->
 									<div id="grid-row">
 										<div id="grid-column">
 											<p>Current Employee Name:</p>
-											<p>Updated Employee Name:</p>
-											<p>Updated Wage:</p>
 										</div>
 										<div id="grid-column">
 											<p><input type ="text" id="curName" name="curName" maxlength="30" value="" required /> </p>
+										</div>
+									</div>
+									
+									<!-- SECOND ROW -->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Updated Employee Name:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type ="text" id="updateName" name="updateName" maxlength="30" value="" required /> </p>
+										</div>
+									</div>
+									
+									<!-- THIRD ROW -->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Updated Wage:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="number" id="updateWage" name="updateWage" value="" min="0" max="999.99" step="0.01" required /></p>
 										</div>
 									</div>
+								<!--END OF GRID -->
 								</div>
 								<p id="center"><input type="submit" value="Update"></p> 
 							</form>
 						</div>
 					</div>
-    
-
+					
 					<!-- CODE FOR DELETING AN EMPLOYEE -->
 					<div id="hideDelete">
 						<p><br>To delete an existing employee in the database, please fill out the form below</p>

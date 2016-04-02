@@ -6,10 +6,12 @@
 		
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 		<meta charset="utf-8">
+		<meta name="google-signin-client_id" content="407820756770-1lfil5lrikof16pool20ssccsur83oav.apps.googleusercontent.com">
 
-		<link href="Glasses.css" rel="stylesheet" type="text/css" /> <!-- For our future css script -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js">
-        	</script> <!-- if we want jquery -->
+		<link href="Glasses.css" rel="stylesheet" type="text/css" />
+		
+		<script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- if we want jquery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> <!-- For Angular Javascript-->
     </head>
     
