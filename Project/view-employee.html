@@ -171,6 +171,8 @@
 			</div>
 		</div>
     
+		<br>
+	
 		<footer id="footer">
 			2016 (c) Travis Gray, Halle Jackson
 		</footer>

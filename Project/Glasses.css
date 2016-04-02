@@ -56,8 +56,7 @@ a:hover{
 
 #grid {
       display: table;
-      border: 1px;
-      border-spacing: 5px;
+      border-spacing: 0px;
       width:100%;
 }
 

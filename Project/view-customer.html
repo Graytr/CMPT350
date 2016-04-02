@@ -56,31 +56,72 @@
 								<legend>Add New Customer</legend>
 								<!-- GRID FOR THE NEW CUSTOMER FORM -->
 								<div id ="grid">
+									<!--FIRST ROW-->
 									<div id="grid-row">
 										<div id="grid-column">
 											<p>Customer Name:</p>
-											<p>Address:</p>
-											<p>Postal Code:</p>
-											<p>City:</p>
-											<p>Telephone Number:</p>
-											<p>Email:</p>
 										</div>
 										<div id="grid-column">
 											<p><input type ="text" id="newCustomerName" name="newCustomerName" maxlength="50" value="" required /></p>
+										</div>
+									</div>
+									
+									<!--SECOND ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Address:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="text" id="newAddress" name="newAddress" value="" maxlength="30" required/></p>
+										</div>
+									</div>
+									
+									<!--THIRD ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Postal Code:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="text" id="newPostalCode" name="newPostalCode" value="" maxlength="7" required/></p>
+										</div>
+									</div>
+									
+									<!-- FOURTH ROW -->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>City:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="text" id="newCityName" name="newCityName" value="" maxlength="30" required /></p>
+										</div>
+									</div>
+									
+									<!--FIFTH ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Telephone Number:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="tel" id="newTel" name="newTel" value="" maxlength="30" required /></p>
+										</div>
+									</div>
+									
+									<!--SIXTH ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Email:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="email" id="newEmail" name="newEmail" value="" required /></p>
 										</div>
 									</div>
+								<!--END OF THE GRID-->
 								</div>								
 								<p id="center"><input type="submit" value="Add"></p> 
 							</form>
 						</div>
 					</div>
 				
-
 					<!-- CODE FOR UPDATING A PURCHASE -->
 					<div id="hideUpdate">
 						<p><br>To update an existing customer in the database, please fill out the form below</p>
@@ -90,31 +131,78 @@
 							<form id="inputs" >
 								<fieldset>
 								<legend>Update Customer</legend>
-								
-								
-								
 								<!-- GRID FOR THE UPDATE CUSTOMER FORM -->
 								<div id ="grid">
+									<!--FIRST ROW-->
 									<div id="grid-row">
 										<div id="grid-column">
 											<p>Customer Name Currently In Database</p>
-											<p>Updated Customer Name:</p>
-											<p>Updated Address:</p>
-											<p>Updated Postal Code:</p>
-											<p>Updated City:</p>
-											<p>Updated Telephone Number:</p>
-											<p>Updated Email:</p>
 										</div>
 										<div id="grid-column">
 											<p><input type ="text" id="curCustomerName" name="curCustomerName" maxlength="50" value="" required /> </p>
+										</div>
+									</div>
+									
+									<!--SECOND ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Updated Customer Name:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type ="text" id="updateCustomerName" name="updateCustomerName" maxlength="50" value="" required /> </p>
+										</div>
+									</div>
+									
+									<!--THIRD ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Updated Address:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="text" id="updateAddress" name="updateAddress" value="" maxlength="30" required/> </p>
+										</div>
+									</div>
+									
+									<!-- FOURTH ROW -->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Updated Postal Code:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="text" id="updatePostalCode" name="updatePostalCode" value="" maxlength="7" required/> </p>
+										</div>
+									</div>
+									
+									<!--FIFTH ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Updated City:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="text" id="updateCityName" name="updateCityName" value="" maxlength="30" required /></p>
+										</div>
+									</div>
+									
+									<!--SIXTH ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Updated Telephone Number:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="tel" id="updateTel" name="updateTel" value="" maxlength="30" required /></p>
+										</div>
+									</div>
+									
+									<!--SEVENTH ROW-->
+									<div id="grid-row">
+										<div id="grid-column">
+											<p>Updated Email:</p>
+										</div>
+										<div id="grid-column">
 											<p><input type="email" id="updateEmail" name="updateEmail" value="" required /></p>
 										</div>
 									</div>
+								<!--END OF GRID-->
 								</div>	
 								<p id="center"><input type="submit" value="Update"></p> 
 							</form>
@@ -160,6 +248,8 @@
 				</div>
 			</div>
 		</div>
+		
+		<br>
 	
 		<footer id="footer">
 			2016 (c) Travis Gray, Halle Jackson
