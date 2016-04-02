@@ -61,7 +61,7 @@
 											<p>Customer Name:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type ="text" id="newCustomerName" name="newCustomerName" maxlength="50" value="" required /></p>
+											<p><input type ="text" ng-model="newCustomerName" maxlength="50" value="" required /></p>
 										</div>
 									</div>
 									
@@ -71,7 +71,7 @@
 											<p>Address:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="text" id="newAddress" name="newAddress" value="" maxlength="30" required/></p>
+											<p><input type="text" ng-model="newAddress" value="" maxlength="30" required/></p>
 										</div>
 									</div>
 									
@@ -81,7 +81,7 @@
 											<p>Postal Code:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="text" id="newPostalCode" name="newPostalCode" value="" maxlength="7" required/></p>
+											<p><input type="text" ng-model="newPostalCode" value="" maxlength="7" required/></p>
 										</div>
 									</div>
 									
@@ -91,7 +91,7 @@
 											<p>City:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="text" id="newCityName" name="newCityName" value="" maxlength="30" required /></p>
+											<p><input type="text" ng-model="newCityName" value="" maxlength="30" required /></p>
 										</div>
 									</div>
 									
@@ -101,7 +101,7 @@
 											<p>Telephone Number:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="tel" id="newTel" name="newTel" value="" maxlength="30" required /></p>
+											<p><input type="tel" ng-model="newTel" value="" maxlength="30" required /></p>
 										</div>
 									</div>
 									
@@ -111,7 +111,7 @@
 											<p>Email:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="email" id="newEmail" name="newEmail" value="" required /></p>
+											<p><input type="email" ng-model="newEmail" value="" required /></p>
 										</div>
 									</div>
 								<!--END OF THE GRID-->
@@ -138,7 +138,7 @@
 											<p>Customer Name Currently In Database</p>
 										</div>
 										<div id="grid-column">
-											<p><input type ="text" id="curCustomerName" name="curCustomerName" maxlength="50" value="" required /> </p>
+											<p><input type ="text" ng-model="curCustomerName" maxlength="50" value="" required /> </p>
 										</div>
 									</div>
 									
@@ -148,7 +148,7 @@
 											<p>Updated Customer Name:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type ="text" id="updateCustomerName" name="updateCustomerName" maxlength="50" value="" required /> </p>
+											<p><input type ="text" ng-model="updateCustomerName" maxlength="50" value="" required /> </p>
 										</div>
 									</div>
 									
@@ -158,7 +158,7 @@
 											<p>Updated Address:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="text" id="updateAddress" name="updateAddress" value="" maxlength="30" required/> </p>
+											<p><input type="text" ng-model="updateAddress" value="" maxlength="30" required/> </p>
 										</div>
 									</div>
 									
@@ -168,7 +168,7 @@
 											<p>Updated Postal Code:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="text" id="updatePostalCode" name="updatePostalCode" value="" maxlength="7" required/> </p>
+											<p><input type="text" ng-model="updatePostalCode" value="" maxlength="7" required/> </p>
 										</div>
 									</div>
 									
@@ -178,7 +178,7 @@
 											<p>Updated City:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="text" id="updateCityName" name="updateCityName" value="" maxlength="30" required /></p>
+											<p><input type="text" ng-model="updateCityName" value="" maxlength="30" required /></p>
 										</div>
 									</div>
 									
@@ -188,7 +188,7 @@
 											<p>Updated Telephone Number:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="tel" id="updateTel" name="updateTel" value="" maxlength="30" required /></p>
+											<p><input type="tel" ng-model="updateTel" value="" maxlength="30" required /></p>
 										</div>
 									</div>
 									
@@ -198,7 +198,7 @@
 											<p>Updated Email:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="email" id="updateEmail" name="updateEmail" value="" required /></p>
+											<p><input type="email" ng-model="updateEmail" value="" required /></p>
 										</div>
 									</div>
 								<!--END OF GRID-->
@@ -227,7 +227,7 @@
 											<p>Customer Name:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type ="text" id="deleteCustomerName" name="deleteCustomerName" maxlength="50" value="" required /></p>
+											<p><input type ="text" ng-model="deleteCustomerName" maxlength="50" value="" required /></p>
 										</div>
 									</div>
 								</div>	
