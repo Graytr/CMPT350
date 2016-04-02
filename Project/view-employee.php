@@ -65,7 +65,7 @@
 											<p>Name:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type ="text" id="newName" name="newName" maxlength="30" value="" required /> </p>
+											<p><input type ="text" ng-model="newName" maxlength="30" value="" required /> </p>
 										</div>
 									</div>
 									
@@ -75,7 +75,7 @@
 											<p>Wage:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="number" id="newWage" name="newWage" value="" min="0" max="999.99" step="0.01" required /></p>
+											<p><input type="number" ng-model="newWage" value="" min="0" max="999.99" step="0.01" required /></p>
 										</div>
 									</div>
 								</div>
@@ -103,7 +103,7 @@
 											<p>Current Employee Name:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type ="text" id="curName" name="curName" maxlength="30" value="" required /> </p>
+											<p><input type ="text" ng-model="curName" maxlength="30" value="" required /> </p>
 										</div>
 									</div>
 									
@@ -113,7 +113,7 @@
 											<p>Updated Employee Name:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type ="text" id="updateName" name="updateName" maxlength="30" value="" required /> </p>
+											<p><input type ="text" ng-model="updateName" maxlength="30" value="" required /> </p>
 										</div>
 									</div>
 									
@@ -123,7 +123,7 @@
 											<p>Updated Wage:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type="number" id="updateWage" name="updateWage" value="" min="0" max="999.99" step="0.01" required /></p>
+											<p><input type="number" ng-model="updateWage" value="" min="0" max="999.99" step="0.01" required /></p>
 										</div>
 									</div>
 								<!--END OF GRID -->
@@ -150,7 +150,7 @@
 											<p>Employee Name:</p>
 										</div>
 										<div id="grid-column">
-											<p><input type ="text" id="deleteName" name="deleteName" maxlength="30" value="" required /> </p>
+											<p><input type ="text" ng-model="deleteName" maxlength="30" value="" required /> </p>
 										</div>
 									</div>
 								</div>
