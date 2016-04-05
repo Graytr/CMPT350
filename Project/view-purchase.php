@@ -66,7 +66,7 @@
 												<p>Customer Name:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type ="text" ng-model="newCustomerName" maxlength="50" value="" required /> </p>
+												<p><input type ="text" name="newCustomerName" maxlength="50" value="" required /> </p>
 											</div>
 										</div>
 										
@@ -76,7 +76,7 @@
 												<p>Date:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type="date" ng-model="newDate" required /></p>
+												<p><input type="date" name="newDate" required /></p>
 											</div>
 										</div>
 										
@@ -86,7 +86,7 @@
 												<p>Cost:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type="number" ng-model="newCost" value="" min="0" max="9999.99" step="0.01" required /></p>
+												<p><input type="number" name="newCost" value="" min="0" max="9999.99" step="0.01" required /></p>
 											</div>
 										</div>
 										
@@ -96,7 +96,7 @@
 												<p>Frame:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type ="text" ng-model="newFrame" maxlength="60" value="" required /> </p>
+												<p><input type ="text" name="newFrame" maxlength="60" value="" required /> </p>
 											</div>
 										</div>
 										
@@ -121,7 +121,7 @@
 															<p>Sphere:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newLSphere" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newLSphere" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -131,7 +131,7 @@
 															<p>Cyl:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newLCyl" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newLCyl" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -141,7 +141,7 @@
 															<p>Axis:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newLAxis" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newLAxis" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -151,7 +151,7 @@
 															<p>Dist:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newLDist" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newLDist" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -161,7 +161,7 @@
 															<p>Near:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newLNear" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newLNear" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -171,7 +171,7 @@
 															<p>IO:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newLIO" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newLIO" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -181,7 +181,7 @@
 															<p>UD:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newLUD" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newLUD" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 												<!--END OF LEFT GRID-->
@@ -201,7 +201,7 @@
 															<p>Sphere:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newRSphere" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newRSphere" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -211,7 +211,7 @@
 															<p>Cyl:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newRCyl" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newRCyl" value="" min="0" max="99.99" step="0.01"/></p>
 															
 														</div>
 													</div>
@@ -222,7 +222,7 @@
 															<p>Axis:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newRAxis" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newRAxis" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -232,7 +232,7 @@
 															<p>Dist:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newRDist" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newRDist" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -242,7 +242,7 @@
 															<p>Near:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newRNear" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newRNear" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -252,7 +252,7 @@
 															<p>IO:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newRIO" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newRIO" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -262,7 +262,7 @@
 															<p>UD:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="newRUD" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="newRUD" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													<!--END OF RIGHT GRID-->
@@ -294,7 +294,7 @@
 												<p>Purchase ID:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type ="number" ng-model="curID" min="0" value="" required /> </p>
+												<p><input type ="number" name="curID" min="0" value="" required /> </p>
 											</div>
 										</div>
 										
@@ -304,7 +304,7 @@
 												<p>Customer Name:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type ="text" ng-model="updateCustomerName" maxlength="50" value="" required /> </p>
+												<p><input type ="text" name="updateCustomerName" maxlength="50" value="" required /> </p>
 											</div>
 										</div>
 										
@@ -314,7 +314,7 @@
 												<p>Date:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type="date" ng-model="updateDate" required /></p>
+												<p><input type="date" name="updateDate" required /></p>
 											</div>
 										</div>
 										
@@ -324,7 +324,7 @@
 												<p>Cost:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type="number" ng-model="updateCost" value="" min="0" max="9999.99" step="0.01" required /></p>
+												<p><input type="number" name="updateCost" value="" min="0" max="9999.99" step="0.01" required /></p>
 											</div>
 										</div>
 										
@@ -334,7 +334,7 @@
 												<p>Frame:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type ="text" ng-model="updateFrame" maxlength="60" value="" required /> </p>
+												<p><input type ="text" name="updateFrame" maxlength="60" value="" required /> </p>
 											</div>
 										</div>
 										
@@ -359,7 +359,7 @@
 															<p>Sphere:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateLSphere" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateLSphere" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -369,7 +369,7 @@
 															<p>Cyl:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateLCyl" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateLCyl" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -379,7 +379,7 @@
 															<p>Axis:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateLAxis" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateLAxis" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -389,7 +389,7 @@
 															<p>Dist:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateLDist" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateLDist" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -399,7 +399,7 @@
 															<p>Near:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateLNear" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateLNear" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -409,7 +409,7 @@
 															<p>IO:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateLIO" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateLIO" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -419,7 +419,7 @@
 															<p>UD:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateLUD" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateLUD" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 												<!--END OF LEFT GRID-->
@@ -439,7 +439,7 @@
 															<p>Sphere:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateRSphere" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateRSphere" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -449,7 +449,7 @@
 															<p>Cyl:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateRCyl" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateRCyl" value="" min="0" max="99.99" step="0.01"/></p>
 															
 														</div>
 													</div>
@@ -460,7 +460,7 @@
 															<p>Axis:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateRAxis" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateRAxis" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -470,7 +470,7 @@
 															<p>Dist:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateRDist" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateRDist" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -480,7 +480,7 @@
 															<p>Near:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateRNear" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateRNear" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -490,7 +490,7 @@
 															<p>IO:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateRIO" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateRIO" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 													
@@ -500,7 +500,7 @@
 															<p>UD:</p>
 														</div>
 														<div id="grid-column">
-															<p><input type="number" ng-model="updateRUD" value="" min="0" max="99.99" step="0.01"/></p>
+															<p><input type="number" name="updateRUD" value="" min="0" max="99.99" step="0.01"/></p>
 														</div>
 													</div>
 												<!--END OF RIGHT GRID-->
@@ -533,7 +533,7 @@
 												<p>Purchase ID:</p>
 											</div>
 											<div id="grid-column">
-												<p><input type ="number" ng-model="deleteID" min="0" value="" required /> </p>
+												<p><input type ="number" name="deleteID" min="0" value="" required /> </p>
 											</div>
 										</div>
 									</div>
