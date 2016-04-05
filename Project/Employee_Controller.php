@@ -1,6 +1,6 @@
 <?php 
-require_once('Model/Connection.php');
-require_once('Model/Employee.php');
+require_once('./Model/Connection.php');
+require_once('./Model/Employee.php');
 
 class Employee_Controller{
 	private $dbInstance;

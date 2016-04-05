@@ -1,6 +1,6 @@
 <?php 
-require_once('./../Model/Connection.php');
-require_once('./../Model/Purchase.php');
+require_once('./Model/Connection.php');
+require_once('./Model/Purchase.php');
 
 class Purchase_Controller{
 	private $dbInstance;

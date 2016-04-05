@@ -1,6 +1,6 @@
 <?php 
-require_once('Model/Connection.php');
-require_once('Model/Customer.php');
+require_once('./Model/Connection.php');
+require_once('./Model/Customer.php');
 
 class Customer_Controller{
 	private $dbInstance;
