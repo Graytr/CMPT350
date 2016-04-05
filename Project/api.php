@@ -1,9 +1,9 @@
 <?php
 
 
-require_once('./Controller/Employee_Controller.php');
-require_once('./Controller/Customer_Controller.php');
-require_once('./Controller/Purchase_Controller.php');
+require_once('Employee_Controller.php');
+require_once('Customer_Controller.php');
+require_once('Purchase_Controller.php');
 
 function getCurrentUri()
   {
