@@ -1,8 +1,9 @@
 <?php
-  require_once('./Connection.php');
+  require_once('Connection.php');
   class Purchase{
 
     public $id;
+	public $customerName;
     public $purDate;
     public $cost;
     public $frame;
@@ -21,8 +22,9 @@
 	public $rightUD;
 	public $leftUD;
 		
-    public function __construct($par_id,$par_purDate, $par_cost,$par_frame, $par_rightSphere, $par_leftSphere, $par_rightCyl, $par_leftCyl, $par_rightAxis, $par_leftAxis, $par_rightDist, $par_leftDist, $par_rightNear, $par_leftNear, $par_rightIO, $par_leftIO, $par_rightUD, $par_leftUD) {
-      $this->id = $par_id;	  
+    public function __construct($par_id,$par_customerName,$par_purDate, $par_cost,$par_frame, $par_rightSphere, $par_leftSphere, $par_rightCyl, $par_leftCyl, $par_rightAxis, $par_leftAxis, $par_rightDist, $par_leftDist, $par_rightNear, $par_leftNear, $par_rightIO, $par_leftIO, $par_rightUD, $par_leftUD) {
+      $this->id = $par_id;	 
+	  $this->customerName = $par_customerName; 
 	  $this->purDate = $par_purDate;
 	  $this->cost = $par_cost;
 	  $this->frame = $par_frame;

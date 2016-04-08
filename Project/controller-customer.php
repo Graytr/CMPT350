@@ -32,19 +32,20 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 	} else if ( isset($_REQUEST['curCustomerName']) ) {
 		//Update an existing table in the database
 		$curCustomerName = $_REQUEST['curCustomerName'];
-		$curAddress = $_REQUEST['curAddress'];
-		$curPostalCode = $_REQUEST['curPostalCode'];
-		$curCity = $_REQUEST['curCity'];
-		$curTel = $_REQUEST['curTel'];
-		$curEmail = $_REQUEST['curEmail'];
+		$updateCustomerName = $_REQUEST['updateCustomerName'];
+		$curAddress = $_REQUEST['updateAddress'];
+		$curPostalCode = $_REQUEST['updatePostalCode'];
+		$curCity = $_REQUEST['updateCityName'];
+		$curTel = $_REQUEST['updateTel'];
+		$curEmail = $_REQUEST['updateEmail'];
 		$sql= " UPDATE customer
-				SET customerName = '$curCustomerName',
+				SET customerName = '$updateCustomerName',
 					address = '$curAddress',
 					postalCode = '$curPostalCode',
 					city = '$curCity',
 					telNum = '$curTel',
-					email = '$email',
-				WHERE id = '$curCustomerName'";
+					email = '$curEmail'
+				WHERE customerName = '$curCustomerName'";
 	} else if ( isset($_REQUEST['deleteCustomerName']) ) {
 		//Delete a building table from the database
 		$deleteCustomerName = $_REQUEST['deleteCustomerName'];
@@ -71,13 +72,13 @@ if ( isset($_REQUEST['newCustomerName']) || isset($_REQUEST['curCustomerName']) 
 		while($row=$results->fetch_assoc()){
 			$database .= "Name: " . $row['customerName'] .
 				 ", Address: " . $row['address'] .
-				 ", Postal Code" . $row['postalCode'] .
+				 ", Postal Code: " . $row['postalCode'] .
 				 ", City: " . $row['city'] .
 				 ", Telephone: " . $row['telNum'] . 
 				 ", Email: " . $row['email'] . "<br>";
 		}
 	}else{
-		$database = "0 results in customer table *cough*";
+		$database = "0 results in customer table";
 	}
 						
 	$conn->close();

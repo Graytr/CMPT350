@@ -1,5 +1,5 @@
 <?php
-  require_once('./Connection.php');
+  require_once('Connection.php');
   class Employee {
 
     public $name;
@@ -22,7 +22,7 @@
       return $list;
     }
 
-    public static function find($id) {
+    public static function find($name) {
       $db = Database_Connection::getInstance();
 
       $req = $db->prepare('SELECT * FROM employee WHERE name = :id');

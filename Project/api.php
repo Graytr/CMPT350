@@ -44,10 +44,10 @@ function getCurrentUri()
   	{
   		if(isset($routes[1]))
 		{
-			if(preg_match('/[0-9]*/',$routes[1]))
-			{
+			//if(preg_match('/[0-9]*/',$routes[1]))
+			//{
 			  $objEmployee_Controller->setParameters($routes);
-			}
+			//}
 		}
 		$input = json_decode(file_get_contents('php://input'),true);
 		echo ($objEmployee_Controller->setQuery($method,$input));

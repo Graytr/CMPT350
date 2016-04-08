@@ -1,8 +1,10 @@
 function onSuccess(googleUser) {
+	document.getElementById('misc').style.display = 'block';
+	console.log('FUCK');
 	console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
 	console.log(googleUser.getBasicProfile().getName() + "\n" + googleUser.getBasicProfile().getEmail());
-	document.getElementById("UserInfo").innerHTML = googleUser.getBasicProfile().getName() + "\n" + googleUser.getBasicProfile().getEmail();
-	document.getElementById("SignOut").innerHTML = "Sign Out";
+	//document.getElementById("UserInfo").innerHTML = googleUser.getBasicProfile().getName() + "\n" + googleUser.getBasicProfile().getEmail();
+	//document.getElementById("SignOut").innerHTML = "Sign Out";
 
 	/*
 	Other options that we can get for googleUser.getBasicProfile():
@@ -23,6 +25,9 @@ function renderButton() {
         'onsuccess': onSuccess,
         'onfailure': onFailure
 	});
+	
+	//document.getElementByID("misc").style.display = "none";
+	
 }
 function signOut() {
 	document.getElementById("UserInfo").innerHTML = "";
@@ -31,5 +36,6 @@ function signOut() {
 	var auth2 = gapi.auth2.getAuthInstance();
 	auth2.signOut().then(function () {
 		console.log('User signed out.');
+		document.getElementByID("misc").style.display = "none";
 	});
 }

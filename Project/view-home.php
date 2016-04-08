@@ -13,17 +13,58 @@
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <!-- if we want jquery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> <!-- For Angular Javascript-->
+
+    	<meta name="google-signin-client_id" content="407820756770-1lfil5lrikof16pool20ssccsur83oav.apps.googleusercontent.com">
+
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+		<script>
+			function onSuccess(googleUser) {
+			  console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+			  document.getElementById("SignOut").innerHTML = "Log Out";
+			}
+			function onFailure(error) {
+			  console.log(error);
+			}
+			function renderButton() {
+			  gapi.signin2.render('my-signin2', {
+				'scope': 'profile email',
+				'width': 240,
+				'height': 50,
+				'longtitle': true,
+				'theme': 'dark',
+				'onsuccess': onSuccess,
+				'onfailure': onFailure
+			  });
+			}
+			function signOut() {
+				document.getElementById("SignOut").innerHTML = "";
+
+				var auth2 = gapi.auth2.getAuthInstance();
+				auth2.signOut().then(function () {
+					console.log('User signed out.');
+					document.getElementById("misc").style.display = "none";
+				});
+			}
+		</script>
+
+    </head>
+		
+		
+		
+		
     </head>
     
 	<body>
+
 	 	<div class="sidebar" id="sidebar">
 			<p>
 			<span id = "header">Clearly Glasses</span>
 			<a href="controller-home.php">Home</a>
 			<a href="controller-employee.php">Employee</a>					
 			<a href="controller-customer.php">Customer</a>					
-			<a href="controller-purchase.php">Purchase</a>					
-			<a href="view-login.php">Log Out</a>									
+			<a href="controller-purchase.php">Purchase</a>
+			<span id="SignOut" onClick="signOut()">Log out</span>					
+
 			</p>
 		</div>
 		
@@ -83,6 +124,7 @@
 	<br>
 	
     <footer id="footer">
+	<span id="my-signin2"></span>	
     	2016 (c) Travis Gray, Halle Jackson
     </footer>
 	</body> 

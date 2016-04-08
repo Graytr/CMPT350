@@ -32,8 +32,8 @@ if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUE
 		$updateWage = $_REQUEST['updateWage'];
 		$sql= " UPDATE employee
 				SET name = '$updateName',
-					wage = '$updateWage',
-				WHERE id = '$curName'";
+					wage = '$updateWage'
+				WHERE name = '$curName'";
 	} else if ( isset($_REQUEST['deleteName']) ) {
 		//Delete a building table from the database
 		$deleteName = $_REQUEST['deleteName'];
@@ -61,7 +61,7 @@ if ( isset($_REQUEST['newName']) || isset($_REQUEST['curName']) || isset($_REQUE
 				 ", Wage: " . $row['wage'] . "<br>";
 		}
 	}else{
-		$database = "0 results in room table";
+		$database = "0 results in employee table";
 	}
 						
 	$conn->close();

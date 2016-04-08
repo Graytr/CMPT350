@@ -12,6 +12,7 @@ html, body {
 	top:0;
 	bottom:0;
 	overflow:scroll;
+	display:none;
 }
 	 
 	 
@@ -19,6 +20,7 @@ html, body {
 	  margin-right:50%;
       font-size:30px;
       }
+
 
 #footer {
       width:100%;
@@ -59,6 +61,20 @@ a:link, a:visited , a:active{
 }
 
 a:hover{
+    background-color: white;
+	color:blue;
+}
+
+#SignOut{
+    background-color: blue;
+    color: white;
+    padding: 1% 1%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#SignOut:hover{
     background-color: white;
 	color:blue;
 }
@@ -111,6 +127,7 @@ input[type=number] {
 	width:50%;
 	margin-left:25%;
 }
+
 
 
 

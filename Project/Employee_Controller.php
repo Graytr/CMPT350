@@ -72,8 +72,9 @@ function setAlterQuery($input){
           	case 'PUT':
           		$this->setAlterQuery($input);
           		$updated_rows=$this->update();
-          		if($updated_rows>0){return json_encode($this->find($this->key));}
-          		return $updated_rows;
+          		//if($updated_rows>0){return json_encode($this->find($this->key));}
+          		return json_encode($this->find($this->key));
+		//	return $updated_rows;
             	break;
           	case 'POST':
           		$this->setAlterQuery($input);
